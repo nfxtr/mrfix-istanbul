@@ -1,0 +1,95 @@
+{
+  "Navigation": {
+    "search_placeholder": "Es: Lampadario, TV, Tinteggiatura...",
+    "search_btn": "Cerca",
+    "support": "Supporto",
+    "online": "Online"
+  },
+  "Hero": {
+    "title_start": "Per la Tua Casa",
+    "typewriter": {
+      "t1": "Montaggio Mobili?",
+      "t2": "Tinteggiatura Pareti?",
+      "t3": "Idraulico?",
+      "t4": "Elettricista?",
+      "t5": "Pulizie?"
+    },
+    "description": "Soluzioni di riparazione professionali per la tua casa con il Maestro Eyüphan. Servizio <highlight1>veloce</highlight1>, <highlight2>garantito</highlight2> ed <highlight3>economico</highlight3>.",
+    "h_fast": "Veloce",
+    "h_guaranteed": "Garantito",
+    "h_economic": "Economico",
+    "badge_insured": "Servizio Assicurato",
+    "badge_satisfaction": "Garanzia di Soddisfazione",
+    "happy_customer": "Cliente Felice",
+    "location": "In tutta Istanbul"
+  },
+  "Categories": {
+    "title": "Di quale servizio hai bisogno?",
+    "subtitle": "Scegli la categoria adatta a te, ottieni supporto professionale a casa tua.",
+    "montaj": "Montaggio",
+    "tamirat": "Riparazione",
+    "elektrik": "Elettricità",
+    "boya": "Tinteggiatura",
+    "temizlik": "Pulizia",
+    "nakliye": "Trasloco",
+    "diger": "Altro"
+  },
+  "ServiceItems": {
+    "mobilya_montaji": "Montaggio Mobili (IKEA)",
+    "tv_montaji": "Installazione TV",
+    "raf_dolap": "Scaffali e Armadi",
+    "perde_kornism": "Tende e Cornici",
+    "musluk_tamiri": "Idraulico (Rubinetto)",
+    "kapi_kilit": "Fabbro e Porte",
+    "pencere_ayari": "Regolazione Finestre",
+    "genel_onarim": "Riparazioni Generali",
+    "avize_montaji": "Installazione Lampadario",
+    "priz_anahtar": "Prese e Interruttori",
+    "sigorta_pano": "Pannello Elettrico",
+    "led_aydinlatma": "Illuminazione a LED",
+    "oda_boyama": "Tinteggiatura Stanze",
+    "tavan_boyama": "Tinteggiatura Soffitto",
+    "duvar_kagidi": "Carta da Parati",
+    "alci_siva": "Gesso e Stucco",
+    "ev_temizligi": "Pulizia Casa",
+    "ofis_temizligi": "Pulizia Ufficio",
+    "koltuk_yikama": "Lavaggio Divani",
+    "insaat_sonrasi": "Pulizia Post-Ristrutturazione",
+    "parca_esya": "Trasporto Mobili",
+    "evden_eve": "Trasloco Casa",
+    "esya_paketleme": "Servizio Imballaggio",
+    "ofis_tasima": "Trasloco Ufficio",
+    "ozel_istek": "Richiesta Speciale"
+  },
+  "Cards": {
+    "desc_template": "Offriamo un servizio garantito per le tue esigenze di {service} con il nostro team professionale.",
+    "whatsapp_btn": "Preventivo / Contatto"
+  },
+  "HowItWorks": {
+    "title": "Come funziona?",
+    "subtitle": "Niente processi complicati. Ottieni il supporto professionale di cui hai bisogno in 3 semplici passaggi.",
+    "step1_title": "Scegli il Servizio",
+    "step1_desc": "Trova facilmente il servizio di cui hai bisogno nelle nostre categorie.",
+    "step2_title": "Supporto Rapido e Appuntamento",
+    "step2_desc": "Ottieni supporto immediato o prenota un appuntamento tramite WhatsApp.",
+    "step3_title": "Esperto alla Porta",
+    "step3_desc": "Il nostro professionista certificato sarà al tuo indirizzo in orario."
+  },
+  "Features": {
+    "title": "I Nostri Standard",
+    "f1_title": "Team Affidabile",
+    "f1_desc": "Tutti i nostri esperti sono professionisti certificati e controllati.",
+    "f2_title": "Supporto Multilingue",
+    "f2_desc": "Comunicazione fluida in turco, inglese, arabo, russo, tedesco, francese, spagnolo, olandese e italiano.",
+    "f3_title": "Prezzo Fisso",
+    "f3_desc": "Nessuna sorpresa. Preventivo chiaro prima del lavoro.",
+    "f4_title": "Lavoro Garantito",
+    "f4_desc": "Tutte le operazioni eseguite sono sotto la garanzia di Mr. Fix."
+  },
+  "Search": {
+    "not_found_title": "Non lo trovi?",
+    "not_found_desc": "Anche se non è nella nostra lista, il nostro team può aiutare.",
+    "whatsapp_help": "Chiedi su WhatsApp",
+    "category_go": "Vai alla categoria"
+  }
+}

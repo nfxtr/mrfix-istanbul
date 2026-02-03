@@ -1,0 +1,95 @@
+{
+  "Navigation": {
+    "search_placeholder": "Ex: Lustre, TV, Peinture...",
+    "search_btn": "Trouver",
+    "support": "Support",
+    "online": "En ligne"
+  },
+  "Hero": {
+    "title_start": "Pour Votre Maison",
+    "typewriter": {
+      "t1": "Montage de Meubles ?",
+      "t2": "Peinture Murale ?",
+      "t3": "Plomberie ?",
+      "t4": "Électricité ?",
+      "t5": "Nettoyage ?"
+    },
+    "description": "Des solutions de réparation professionnelles pour votre maison avec Maître Eyüphan. Service <highlight1>rapide</highlight1>, <highlight2>garanti</highlight2> et <highlight3>économique</highlight3>.",
+    "h_fast": "Rapide",
+    "h_guaranteed": "Garanti",
+    "h_economic": "Économique",
+    "badge_insured": "Service Assuré",
+    "badge_satisfaction": "Satisfaction Garantie",
+    "happy_customer": "Client Heureux",
+    "location": "Partout à Istanbul"
+  },
+  "Categories": {
+    "title": "De quel service avez-vous besoin ?",
+    "subtitle": "Choisissez la catégorie qui vous convient, obtenez un support professionnel à votre porte.",
+    "montaj": "Montage",
+    "tamirat": "Réparation",
+    "elektrik": "Électricité",
+    "boya": "Peinture",
+    "temizlik": "Nettoyage",
+    "nakliye": "Déménagement",
+    "diger": "Autre"
+  },
+  "ServiceItems": {
+    "mobilya_montaji": "Montage Meubles (IKEA)",
+    "tv_montaji": "Installation TV",
+    "raf_dolap": "Étagères & Armoires",
+    "perde_kornism": "Rideaux & Corniches",
+    "musluk_tamiri": "Plombier (Robinet)",
+    "kapi_kilit": "Serrurerie & Portes",
+    "pencere_ayari": "Réglage Fenêtre",
+    "genel_onarim": "Bricolage Général",
+    "avize_montaji": "Installation Lustre",
+    "priz_anahtar": "Prises & Interrupteurs",
+    "sigorta_pano": "Tableau Électrique",
+    "led_aydinlatma": "Éclairage LED",
+    "oda_boyama": "Peinture Chambre",
+    "tavan_boyama": "Peinture Plafond",
+    "duvar_kagidi": "Papier Peint",
+    "alci_siva": "Plâtre & Enduit",
+    "ev_temizligi": "Ménage à Domicile",
+    "ofis_temizligi": "Nettoyage Bureau",
+    "koltuk_yikama": "Lavage Canapé",
+    "insaat_sonrasi": "Nettoyage Fin Chantier",
+    "parca_esya": "Transport Partiel",
+    "evden_eve": "Déménagement Maison",
+    "esya_paketleme": "Emballage",
+    "ofis_tasima": "Déménagement Bureau",
+    "ozel_istek": "Demande Spéciale"
+  },
+  "Cards": {
+    "desc_template": "Nous offrons un service garanti pour vos besoins de {service} avec notre équipe professionnelle.",
+    "whatsapp_btn": "Devis / Contact"
+  },
+  "HowItWorks": {
+    "title": "Comment ça marche ?",
+    "subtitle": "Ne perdez pas de temps avec des processus complexes. Obtenez de l'aide en 3 étapes simples.",
+    "step1_title": "Choisissez le service",
+    "step1_desc": "Trouvez facilement le service dont vous avez besoin.",
+    "step2_title": "Support Rapide & RDV",
+    "step2_desc": "Obtenez un support instantané ou prenez rendez-vous via WhatsApp.",
+    "step3_title": "Expert à votre porte",
+    "step3_desc": "Notre expert certifié arrive à votre adresse à l'heure prévue."
+  },
+  "Features": {
+    "title": "Nos Standards",
+    "f1_title": "Équipe Fiable",
+    "f1_desc": "Tous nos experts sont des professionnels certifiés et vérifiés.",
+    "f2_title": "Support Multilingue",
+    "f2_desc": "Communication fluide en Turc, Anglais, Arabe, Russe, Allemand et Français.",
+    "f3_title": "Prix Fixe",
+    "f3_desc": "Pas de coûts surprises. Devis clair avant les travaux.",
+    "f4_title": "Travail Garanti",
+    "f4_desc": "Toutes les opérations sont sous la garantie Mr. Fix."
+  },
+  "Search": {
+    "not_found_title": "Vous ne trouvez pas ?",
+    "not_found_desc": "Même si ce n'est pas dans la liste, notre équipe peut vous aider.",
+    "whatsapp_help": "Demander sur WhatsApp",
+    "category_go": "Voir la catégorie"
+  }
+}

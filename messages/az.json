@@ -1,0 +1,95 @@
+{
+  "Navigation": {
+    "search_placeholder": "Məs: Çilçıraq, TV, Boya...",
+    "search_btn": "Axtar",
+    "support": "Dəstək",
+    "online": "Onlayn"
+  },
+  "Hero": {
+    "title_start": "Eviniz Üçün",
+    "typewriter": {
+      "t1": "Mebel Quraşdırılması?",
+      "t2": "Divar Boyanması?",
+      "t3": "Santexnik?",
+      "t4": "Elektrik İşləri?",
+      "t5": "Təmizlik?"
+    },
+    "description": "Eyüphan Usta və peşəkar komandası ilə evinizdəki bütün təmir işləri üçün <highlight1>sürətli</highlight1>, <highlight2>zəmanətli</highlight2> və <highlight3>sərfəli</highlight3> həllər.",
+    "h_fast": "Sürətli",
+    "h_guaranteed": "Zəmanətli",
+    "h_economic": "Sərfəli",
+    "badge_insured": "Sığortalı Xidmət",
+    "badge_satisfaction": "Məmnuniyyət Zəmanəti",
+    "happy_customer": "Məmnun Müştəri",
+    "location": "Bütün İstanbulda"
+  },
+  "Categories": {
+    "title": "Hansı xidmətə ehtiyacınız var?",
+    "subtitle": "Sizə uyğun kateqoriyanı seçin, peşəkar dəstək qapınıza gəlsin.",
+    "montaj": "Quraşdırma",
+    "tamirat": "Təmir",
+    "elektrik": "Elektrik",
+    "boya": "Boya",
+    "temizlik": "Təmizlik",
+    "nakliye": "Daşınma",
+    "diger": "Digər"
+  },
+  "ServiceItems": {
+    "mobilya_montaji": "Mebel Quraşdırılması",
+    "tv_montaji": "TV Quraşdırılması",
+    "raf_dolap": "Rəf və Dolab",
+    "perde_kornism": "Pərdə və Korniş",
+    "musluk_tamiri": "Santexnik (Kran təmiri)",
+    "kapi_kilit": "Qapı və Kilid",
+    "pencere_ayari": "Pəncərə Təmiri",
+    "genel_onarim": "Ümumi Təmir",
+    "avize_montaji": "Çilçıraq Asılması",
+    "priz_anahtar": "Rozetka və Açar",
+    "sigorta_pano": "Elektrik Paneli",
+    "led_aydinlatma": "LED İşıqlandırma",
+    "oda_boyama": "Otaq Boyanması",
+    "tavan_boyama": "Tavan Boyanması",
+    "duvar_kagidi": "Divar Kağızı",
+    "alci_siva": "Suvaq və Alçı",
+    "ev_temizligi": "Ev Təmizliyi",
+    "ofis_temizligi": "Ofis Təmizliyi",
+    "koltuk_yikama": "Divan Yuyulması",
+    "insaat_sonrasi": "Təmirdən Sonra Təmizlik",
+    "parca_esya": "Hissə Əşya Daşınması",
+    "evden_eve": "Evdən Evə Daşınma",
+    "esya_paketleme": "Əşya Paketləmə",
+    "ofis_tasima": "Ofis Daşınması",
+    "ozel_istek": "Xüsusi İstək"
+  },
+  "Cards": {
+    "desc_template": "Peşəkar komandamızla {service} ehtiyaclarınız üçün zəmanətli xidmət təklif edirik.",
+    "whatsapp_btn": "Qiymət Al / Əlaqə"
+  },
+  "HowItWorks": {
+    "title": "Necə İşləyirik?",
+    "subtitle": "Mürəkkəb proseslərlə vaxt itirməyin. Cəmi 3 sadə addımda peşəkar dəstək əldə edin.",
+    "step1_title": "Xidməti Seçin",
+    "step1_desc": "Kateqoriyalarımızdan ehtiyacınız olan xidməti asanlıqla tapın.",
+    "step2_title": "Sürətli Dəstək və Randevu",
+    "step2_desc": "WhatsApp xəttimizdən dərhal dəstək alın və ya randevu yaradın.",
+    "step3_title": "Usta Qapınızda",
+    "step3_desc": "Təsdiqlənmiş və peşəkar ustamız tam vaxtında ünvanınızdadır."
+  },
+  "Features": {
+    "title": "Xidmət Standartlarımız",
+    "f1_title": "Etibarlı Komanda",
+    "f1_desc": "Bütün ustalarımız təhlükəsizlik yoxlamasından keçmiş sertifikatlı peşəkarlardır.",
+    "f2_title": "Çoxdilli Dəstək",
+    "f2_desc": "Türk, İngilis, Ərəb, Rus və Azərbaycan dillərində rahat ünsiyyət.",
+    "f3_title": "Sabit Qiymət",
+    "f3_desc": "Sürpriz xərclər yoxdur. İşdən əvvəl dəqiq qiymət təklifi.",
+    "f4_title": "Zəmanətli İş",
+    "f4_desc": "Görülən bütün işlər Mr. Fix zəmanəti altındadır."
+  },
+  "Search": {
+    "not_found_title": "Axtardığınızı tapmadınız?",
+    "not_found_desc": "Siyahımızda olmasa belə, komandamız sizə kömək edə bilər.",
+    "whatsapp_help": "WhatsApp-da Soruşun",
+    "category_go": "Kateqoriyaya get"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "Metadata": {
+    "home": {
+      "title": "Handwerker Istanbul | Deutschsprachige Renovierung & Montage",
+      "description": "Ihr deutscher Handwerker in Istanbul. Professionelle Hilfe bei Möbelmontage, Elektrik, Sanitär und Renovierung. Zuverlässig und schnell."
+    },
+    "contact": {
+      "title": "Handwerker rufen | Reparatur & Montageservice Istanbul",
+      "description": "Schnelle Hilfe in Maslak 1453 und ganz Istanbul. Kontaktieren Sie jetzt unseren deutschsprachigen Kundenservice für Reparaturen."
+    }
+  },
+  "Navigation": {
+    "search_placeholder": "Bsp: Kronleuchter, TV, Malen...",
+    "search_btn": "Finden",
+    "support": "Hilfe",
+    "online": "Online"
+  },
+  "Hero": {
+    "title_start": "Für Ihr Zuhause",
+    "typewriter": {
+      "t1": "Möbelmontage?",
+      "t2": "Wand streichen?",
+      "t3": "Klempner?",
+      "t4": "Elektriker?",
+      "t5": "Reinigung?"
+    },
+    "description": "Professionelle Reparaturlösungen für Ihr Zuhause mit Meister Eyüphan. <highlight1>Schnell</highlight1>, <highlight2>Garantiert</highlight2> und <highlight3>Günstig</highlight3>.",
+    "h_fast": "Schnell",
+    "h_guaranteed": "Garantiert",
+    "h_economic": "Günstig",
+    "badge_insured": "Versicherter Service",
+    "badge_satisfaction": "Zufriedenheitsgarantie",
+    "happy_customer": "Glücklicher Kunde",
+    "location": "Ganz Istanbul"
+  },
+  "Categories": {
+    "title": "Welchen Service benötigen Sie?",
+    "subtitle": "Wählen Sie die passende Kategorie und erhalten Sie professionelle Hilfe vor Ihrer Haustür.",
+    "montaj": "Montage",
+    "tamirat": "Reparatur",
+    "elektrik": "Elektrik",
+    "boya": "Maler",
+    "temizlik": "Reinigung",
+    "nakliye": "Umzug",
+    "diger": "Sonstiges"
+  },
+  "ServiceItems": {
+    "mobilya_montaji": "Möbelmontage (IKEA)",
+    "tv_montaji": "TV-Montage",
+    "raf_dolap": "Regale & Schränke",
+    "perde_kornism": "Vorhänge & Gardinen",
+    "musluk_tamiri": "Klempner (Wasserhahn)",
+    "kapi_kilit": "Schlüsseldienst",
+    "pencere_ayari": "Fenstereinstellung",
+    "genel_onarim": "Allgemeine Reparaturen",
+    "avize_montaji": "Kronleuchter Montage",
+    "priz_anahtar": "Steckdosen & Schalter",
+    "sigorta_pano": "Sicherungskasten",
+    "led_aydinlatma": "LED-Beleuchtung",
+    "oda_boyama": "Zimmer streichen",
+    "tavan_boyama": "Decke streichen",
+    "duvar_kagidi": "Tapezieren",
+    "alci_siva": "Gips & Verputz",
+    "ev_temizligi": "Hausreinigung",
+    "ofis_temizligi": "Büroreinigung",
+    "koltuk_yikama": "Sofa reinigung",
+    "insaat_sonrasi": "Baureinigung",
+    "parca_esya": "Möbeltransport",
+    "evden_eve": "Wohnungsumzug",
+    "esya_paketleme": "Verpackungsservice",
+    "ofis_tasima": "Büroumzug",
+    "ozel_istek": "Sonderwunsch"
+  },
+  "Cards": {
+    "desc_template": "Wir bieten garantierten Service für Ihre {service}-Bedürfnisse mit unserem professionellen Team.",
+    "whatsapp_btn": "Angebot / Kontakt"
+  },
+  "HowItWorks": {
+    "title": "Wie funktioniert es?",
+    "subtitle": "Keine komplizierten Prozesse. Erhalten Sie professionelle Unterstützung in 3 einfachen Schritten.",
+    "step1_title": "Service wählen",
+    "step1_desc": "Finden Sie einfach den gewünschten Service in unseren Kategorien.",
+    "step2_title": "Support & Termin",
+    "step2_desc": "Erhalten Sie sofortigen Support oder buchen Sie einen Termin über WhatsApp.",
+    "step3_title": "Meister vor Ort",
+    "step3_desc": "Unser geprüfter Profi ist pünktlich an Ihrer Adresse."
+  },
+  "Features": {
+    "title": "Unsere Standards",
+    "f1_title": "Zuverlässiges Team",
+    "f1_desc": "Alle unsere Experten sind zertifizierte Profis mit Sicherheitsüberprüfung.",
+    "f2_title": "Mehrsprachiger Support",
+    "f2_desc": "Reibungslose Kommunikation auf Türkisch, Englisch, Arabisch, Russisch, Deutsch und Französisch.",
+    "f3_title": "Festpreis",
+    "f3_desc": "Keine versteckten Kosten. Klares Preisangebot vor Arbeitsbeginn.",
+    "f4_title": "Garantierte Arbeit",
+    "f4_desc": "Alle durchgeführten Arbeiten unterliegen der Garantie von Mr. Fix."
+  },
+  "Search": {
+    "not_found_title": "Nicht gefunden?",
+    "not_found_desc": "Auch wenn es nicht auf unserer Liste steht, kann unser Team helfen.",
+    "whatsapp_help": "Fragen über WhatsApp",
+    "category_go": "Zur Kategorie"
+  }
+}

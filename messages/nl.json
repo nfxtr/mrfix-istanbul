@@ -1,0 +1,95 @@
+    {
+  "Navigation": {
+    "search_placeholder": "Bijv: Kroonluchter, TV, Schilderen...",
+    "search_btn": "Zoeken",
+    "support": "Ondersteuning",
+    "online": "Online"
+  },
+  "Hero": {
+    "title_start": "Voor Uw Huis",
+    "typewriter": {
+      "t1": "Meubelmontage?",
+      "t2": "Muur Schilderen?",
+      "t3": "Loodgieter?",
+      "t4": "Elektricien?",
+      "t5": "Schoonmaak?"
+    },
+    "description": "Professionele reparatieoplossingen voor uw huis met Meester Eyüphan. <highlight1>Snel</highlight1>, <highlight2>Gegarandeerd</highlight2> en <highlight3>Betaalbaar</highlight3>.",
+    "h_fast": "Snel",
+    "h_guaranteed": "Gegarandeerd",
+    "h_economic": "Betaalbaar",
+    "badge_insured": "Verzekerde Service",
+    "badge_satisfaction": "Tevredenheidsgarantie",
+    "happy_customer": "Tevreden Klant",
+    "location": "In heel Istanbul"
+  },
+  "Categories": {
+    "title": "Welke dienst heeft u nodig?",
+    "subtitle": "Kies de juiste categorie en ontvang professionele ondersteuning aan uw deur.",
+    "montaj": "Montage",
+    "tamirat": "Reparatie",
+    "elektrik": "Elektra",
+    "boya": "Schilderwerk",
+    "temizlik": "Schoonmaak",
+    "nakliye": "Verhuizing",
+    "diger": "Overig"
+  },
+  "ServiceItems": {
+    "mobilya_montaji": "Meubelmontage (IKEA)",
+    "tv_montaji": "TV Installatie",
+    "raf_dolap": "Planken & Kasten",
+    "perde_kornism": "Gordijnen & Rails",
+    "musluk_tamiri": "Loodgieter (Kraan)",
+    "kapi_kilit": "Slotenmaker & Deuren",
+    "pencere_ayari": "Raam Afstellen",
+    "genel_onarim": "Algemene Reparaties",
+    "avize_montaji": "Kroonluchter Montage",
+    "priz_anahtar": "Stopcontacten & Schakelaars",
+    "sigorta_pano": "Groepenkast",
+    "led_aydinlatma": "LED Verlichting",
+    "oda_boyama": "Kamer Schilderen",
+    "tavan_boyama": "Plafond Schilderen",
+    "duvar_kagidi": "Behangen",
+    "alci_siva": "Stucwerk & Gips",
+    "ev_temizligi": "Huis Schoonmaken",
+    "ofis_temizligi": "Kantoor Schoonmaken",
+    "koltuk_yikama": "Bank Reinigen",
+    "insaat_sonrasi": "Bouwopruiming",
+    "parca_esya": "Meubeltransport",
+    "evden_eve": "Huisverhuizing",
+    "esya_paketleme": "Inpakservice",
+    "ofis_tasima": "Kantoorverhuizing",
+    "ozel_istek": "Speciaal Verzoek"
+  },
+  "Cards": {
+    "desc_template": "Wij bieden gegarandeerde service voor uw {service}-behoeften met ons professionele team.",
+    "whatsapp_btn": "Offerte / Contact"
+  },
+  "HowItWorks": {
+    "title": "Hoe werkt het?",
+    "subtitle": "Geen ingewikkelde processen. Krijg de professionele ondersteuning die u nodig heeft in 3 eenvoudige stappen.",
+    "step1_title": "Kies de Dienst",
+    "step1_desc": "Vind eenvoudig de dienst die u nodig heeft in onze categorieën.",
+    "step2_title": "Support & Afspraak",
+    "step2_desc": "Krijg direct ondersteuning of maak een afspraak via WhatsApp.",
+    "step3_title": "Expert aan de Deur",
+    "step3_desc": "Onze gecertificeerde professional is op tijd op uw adres."
+  },
+  "Features": {
+    "title": "Onze Standaarden",
+    "f1_title": "Betrouwbaar Team",
+    "f1_desc": "Al onze experts zijn gecertificeerde professionals met een veiligheidscheck.",
+    "f2_title": "Meertalige Ondersteuning",
+    "f2_desc": "Vloeiende communicatie in het Turks, Engels, Arabisch, Russisch, Duits en Nederlands.",
+    "f3_title": "Vaste Prijs",
+    "f3_desc": "Geen verrassingen. Duidelijke prijsopgave vooraf.",
+    "f4_title": "Gegarandeerd Werk",
+    "f4_desc": "Alle uitgevoerde werkzaamheden vallen onder de garantie van Mr. Fix."
+  },
+  "Search": {
+    "not_found_title": "Niet gevonden?",
+    "not_found_desc": "Zelfs als het niet op onze lijst staat, kan ons team helpen.",
+    "whatsapp_help": "Vraag via WhatsApp",
+    "category_go": "Ga naar categorie"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "Metadata": {
+    "home": {
+      "title": "İstanbul Tadilat & Montaj Ustası | Mobilya, Elektrik, Tesisat",
+      "description": "İstanbul genelinde güvenilir usta hizmeti. Mobilya montajı, elektrik, sıhhi tesisat, boya badana ve anahtar teslim tadilat işleri için hemen ulaşın."
+    },
+    "contact": {
+      "title": "Usta Çağır | İstanbul Tamirat & Montaj Servisi",
+      "description": "7/24 Teknik Servis ve Usta Desteği. Maslak 1453 ve tüm İstanbul geneli için hızlı randevu oluşturun."
+    }
+  },
+  "Navigation": {
+    "search_placeholder": "Örn: Avize, Televizyon, Boya...",
+    "search_btn": "Hemen Bul",
+    "support": "Destek",
+    "online": "Çevrimiçi"
+  },
+  "Hero": {
+    "title_start": "Eviniz İçin",
+    "typewriter": {
+      "t1": "Mobilya Montajı?",
+      "t2": "Boya Badana?",
+      "t3": "Musluk Tamiri?",
+      "t4": "Elektrik İşleri?",
+      "t5": "Temizlik?"
+    },
+    "description": "Eyüphan Usta ve profesyonel ekibiyle evinizdeki tüm tamirat işleri için <highlight1>hızlı</highlight1>, <highlight2>garantili</highlight2> ve <highlight3>ekonomik</highlight3> çözümler.",
+    "h_economic": "ekonomik",
+    "badge_insured": "Sigortalı Hizmet",
+    "badge_satisfaction": "Memnuniyet Garantisi",
+    "happy_customer": "Mutlu Müşteri",
+    "location": "İstanbul genelinde"
+  },
+  "Categories": {
+    "title": "Hangi Hizmete İhtiyacınız Var?",
+    "subtitle": "Size uygun kategoriyi seçin, profesyonel destek ayağınıza gelsin.",
+    "montaj": "Montaj",
+    "tamirat": "Tamirat",
+    "elektrik": "Elektrik",
+    "boya": "Boya",
+    "temizlik": "Temizlik",
+    "nakliye": "Nakliye",
+    "diger": "Diğer"
+  },
+  "ServiceItems": {
+    "mobilya_montaji": "Mobilya Montajı",
+    "tv_montaji": "TV Montajı",
+    "raf_dolap": "Raf & Dolap",
+    "perde_kornism": "Perde & Korniş",
+    "musluk_tamiri": "Musluk Tamiri",
+    "kapi_kilit": "Kapı & Kilit",
+    "pencere_ayari": "Pencere Ayarı",
+    "genel_onarim": "Genel Onarım",
+    "avize_montaji": "Avize Montajı",
+    "priz_anahtar": "Priz & Anahtar",
+    "sigorta_pano": "Sigorta & Pano",
+    "led_aydinlatma": "Led Aydınlatma",
+    "oda_boyama": "Oda Boyama",
+    "tavan_boyama": "Tavan Boyama",
+    "duvar_kagidi": "Duvar Kağıdı",
+    "alci_siva": "Alçı & Sıva",
+    "ev_temizligi": "Ev Temizliği",
+    "ofis_temizligi": "Ofis Temizliği",
+    "koltuk_yikama": "Koltuk Yıkama",
+    "insaat_sonrasi": "İnşaat Sonrası",
+    "parca_esya": "Parça Eşya",
+    "evden_eve": "Evden Eve",
+    "esya_paketleme": "Eşya Paketleme",
+    "ofis_tasima": "Ofis Taşıma",
+    "ozel_istek": "Özel İstek"
+  },
+  "Cards": {
+    "desc_template": "Profesyonel ekibimizle {service} işlemleriniz için garantili hizmet sunuyoruz.",
+    "whatsapp_btn": "Fiyat Al / İletişim"
+  },
+  "HowItWorks": {
+    "title": "Nasıl Çalışıyoruz?",
+    "subtitle": "Karmaşık süreçlerle uğraşmayın. Sadece 3 basit adımda ihtiyacınız olan profesyonel desteği kapınıza getirelim.",
+    "step1_title": "Hizmeti Seç",
+    "step1_desc": "İhtiyacınız olan hizmeti kategorilerimizden kolayca bulun.",
+    "step2_title": "Hızlı Destek & Randevu",
+    "step2_desc": "Acil durumlarda WhatsApp hattımızdan anında destek alın veya randevu oluşturun.",
+    "step3_title": "Ustan Kapında",
+    "step3_desc": "Onaylı ve profesyonel ustamız tam zamanında adresinizde."
+  },
+  "Features": {
+    "title": "Hizmet Standartlarımız",
+    "f1_title": "Güvenilir Ekip",
+    "f1_desc": "Tüm ustalarımız güvenlik kontrolünden geçmiş sertifikalı profesyonellerdir.",
+    "f2_title": "Çok Dilli Destek",
+    "f2_desc": "Türkçe, İngilizce ve Arapça dillerinde sorunsuz iletişim.",
+    "f3_title": "Sabit Fiyat",
+    "f3_desc": "Sürpriz maliyet yok. İş öncesi net fiyat teklifi.",
+    "f4_title": "Garantili İşçilik",
+    "f4_desc": "Yapılan tüm işlemler Mr. Fix güvencesi altındadır."
+  },
+  "Search": {
+    "not_found_title": "Aradığınızı bulamadınız mı?",
+    "not_found_desc": "Listemizde olmasa bile ekibimiz yardımcı olabilir.",
+    "whatsapp_help": "Bize WhatsApp'tan Sorun",
+    "category_go": "Kategoriye git"
+  },
+  "ContactPage": {
+    "title": "İletişim",
+    "subtitle": "Sorularınız, talepleriniz veya randevu için bizimle iletişime geçin.",
+    "info_title": "İletişim Bilgileri",
+    "form_title": "Bize Yazın",
+    "form_desc": "Aşağıdaki formu doldurarak bize ulaşabilirsiniz. En kısa sürede dönüş yapacağız.",
+    "labels": {
+      "name_placeholder": "Adınız Soyadınız",
+      "phone_placeholder": "Telefon Numaranız",
+      "subject_placeholder": "Konu",
+      "message_placeholder": "Mesajınız..."
+    },
+    "btn_send": "Mesajı Gönder",
+    "success_title": "Mesajınız Alındı!",
+    "success_title": "Mesajınız Alındı!",
+    "success_desc": "Bizimle iletişime geçtiğiniz için teşekkürler. Ekibimiz en kısa sürede size geri dönüş yapacaktır.",
+    "error_message": "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin veya WhatsApp üzerinden ulaşın.",
+    "contact_info": {
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp Destek",
+      "address": "Adres",
+      "working_hours": "Çalışma Saatleri",
+      "working_hours_val": "Hafta içi: 09:00 - 19:00"
+    }
+  }
+}

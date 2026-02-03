@@ -1,0 +1,95 @@
+{
+  "Navigation": {
+    "search_placeholder": "Ej: Lámpara, TV, Pintura...",
+    "search_btn": "Buscar",
+    "support": "Soporte",
+    "online": "En línea"
+  },
+  "Hero": {
+    "title_start": "Para Tu Hogar",
+    "typewriter": {
+      "t1": "¿Montaje de Muebles?",
+      "t2": "¿Pintura de Paredes?",
+      "t3": "¿Fontanería?",
+      "t4": "¿Electricidad?",
+      "t5": "¿Limpieza?"
+    },
+    "description": "Soluciones de reparación profesionales para tu hogar con el Maestro Eyüphan. Servicio <highlight1>rápido</highlight1>, <highlight2>garantizado</highlight2> y <highlight3>económico</highlight3>.",
+    "h_fast": "Rápido",
+    "h_guaranteed": "Garantizado",
+    "h_economic": "Económico",
+    "badge_insured": "Servicio Asegurado",
+    "badge_satisfaction": "Garantía de Satisfacción",
+    "happy_customer": "Cliente Feliz",
+    "location": "En todo Estambul"
+  },
+  "Categories": {
+    "title": "¿Qué servicio necesitas?",
+    "subtitle": "Elige la categoría adecuada y recibe soporte profesional en tu puerta.",
+    "montaj": "Montaje",
+    "tamirat": "Reparación",
+    "elektrik": "Electricidad",
+    "boya": "Pintura",
+    "temizlik": "Limpieza",
+    "nakliye": "Mudanza",
+    "diger": "Otro"
+  },
+  "ServiceItems": {
+    "mobilya_montaji": "Montaje de Muebles (IKEA)",
+    "tv_montaji": "Instalación de TV",
+    "raf_dolap": "Estantes y Armarios",
+    "perde_kornism": "Cortinas y Cornisas",
+    "musluk_tamiri": "Fontanero (Grifos)",
+    "kapi_kilit": "Cerrajería y Puertas",
+    "pencere_ayari": "Ajuste de Ventanas",
+    "genel_onarim": "Reparaciones Generales",
+    "avize_montaji": "Instalación de Lámparas",
+    "priz_anahtar": "Enchufes e Interruptores",
+    "sigorta_pano": "Cuadro Eléctrico",
+    "led_aydinlatma": "Iluminación LED",
+    "oda_boyama": "Pintura de Habitaciones",
+    "tavan_boyama": "Pintura de Techos",
+    "duvar_kagidi": "Papel Pintado",
+    "alci_siva": "Yeso y Estuco",
+    "ev_temizligi": "Limpieza del Hogar",
+    "ofis_temizligi": "Limpieza de Oficinas",
+    "koltuk_yikama": "Lavado de Sofás",
+    "insaat_sonrasi": "Limpieza Post-Obra",
+    "parca_esya": "Transporte Parcial",
+    "evden_eve": "Mudanza de Casa",
+    "esya_paketleme": "Servicio de Embalaje",
+    "ofis_tasima": "Mudanza de Oficina",
+    "ozel_istek": "Petición Especial"
+  },
+  "Cards": {
+    "desc_template": "Ofrecemos un servicio garantizado para tus necesidades de {service} con nuestro equipo profesional.",
+    "whatsapp_btn": "Presupuesto / Contacto"
+  },
+  "HowItWorks": {
+    "title": "¿Cómo funciona?",
+    "subtitle": "Olvídate de procesos complicados. Obtén el soporte profesional que necesitas en 3 simples pasos.",
+    "step1_title": "Elige el Servicio",
+    "step1_desc": "Encuentra fácilmente el servicio que necesitas en nuestras categorías.",
+    "step2_title": "Soporte Rápido y Cita",
+    "step2_desc": "Obtén soporte instantáneo o reserva una cita a través de WhatsApp.",
+    "step3_title": "Experto en tu Puerta",
+    "step3_desc": "Nuestro experto certificado llegará a tu dirección a tiempo."
+  },
+  "Features": {
+    "title": "Nuestros Estándares",
+    "f1_title": "Equipo Confiable",
+    "f1_desc": "Todos nuestros expertos son profesionales certificados con verificación de seguridad.",
+    "f2_title": "Soporte Multilingüe",
+    "f2_desc": "Comunicación fluida en turco, inglés, árabe, ruso, alemán, francés y español.",
+    "f3_title": "Precio Fijo",
+    "f3_desc": "Sin costos sorpresa. Presupuesto claro antes del trabajo.",
+    "f4_title": "Trabajo Garantizado",
+    "f4_desc": "Todas las operaciones realizadas están bajo la garantía de Mr. Fix."
+  },
+  "Search": {
+    "not_found_title": "¿No lo encuentras?",
+    "not_found_desc": "Incluso si no está en nuestra lista, nuestro equipo puede ayudar.",
+    "whatsapp_help": "Preguntar por WhatsApp",
+    "category_go": "Ir a la categoría"
+  }
+}

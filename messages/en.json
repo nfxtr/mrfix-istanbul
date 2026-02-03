@@ -1,0 +1,105 @@
+{
+  "Metadata": {
+    "home": {
+      "title": "Handyman Istanbul | English Speaking Renovation & Repair",
+      "description": "Professional handyman services in Istanbul for expats. Furniture assembly, electrical, plumbing, painting, and full home renovation. Trusted English speaking team."
+    },
+    "contact": {
+      "title": "Call a Handyman | Istanbul Repair & Assembly Service",
+      "description": "Fast technical support and handyman service in Maslak 1453 and across Istanbul. Book an English speaking expert now."
+    }
+  },
+  "Navigation": {
+    "search_placeholder": "Ex: Chandelier, TV Mount, Painting...",
+    "search_btn": "Find Now",
+    "support": "Support",
+    "online": "Online"
+  },
+  "Hero": {
+    "title_start": "For Your Home",
+    "typewriter": {
+      "t1": "Furniture Assembly?",
+      "t2": "Wall Painting?",
+      "t3": "Faucet Repair?",
+      "t4": "Electrical Works?",
+      "t5": "Cleaning?"
+    },
+    "description": "Professional repair solutions for your home with Eyüphan Usta. <highlight1>Fast</highlight1>, <highlight2>Guaranteed</highlight2>, and <highlight3>Affordable</highlight3> service.",
+    "h_fast": "Fast",
+    "h_guaranteed": "Guaranteed",
+    "h_economic": "Affordable",
+    "badge_insured": "Insured Service",
+    "badge_satisfaction": "Satisfaction Guarantee",
+    "happy_customer": "Happy Customer",
+    "location": "Across Istanbul"
+  },
+  "Categories": {
+    "title": "Which Service Do You Need?",
+    "subtitle": "Choose the category that suits you, get professional support at your doorstep.",
+    "montaj": "Assembly",
+    "tamirat": "Repair",
+    "elektrik": "Electric",
+    "boya": "Painting",
+    "temizlik": "Cleaning",
+    "nakliye": "Moving",
+    "diger": "Other"
+  },
+  "ServiceItems": {
+    "mobilya_montaji": "Furniture Assembly",
+    "tv_montaji": "TV Mounting",
+    "raf_dolap": "Shelf & Cabinet",
+    "perde_kornism": "Curtain & Cornice",
+    "musluk_tamiri": "Faucet Repair",
+    "kapi_kilit": "Door & Lock",
+    "pencere_ayari": "Window Adjustment",
+    "genel_onarim": "General Repair",
+    "avize_montaji": "Chandelier Install",
+    "priz_anahtar": "Socket & Switch",
+    "sigorta_pano": "Fuse & Panel",
+    "led_aydinlatma": "LED Lighting",
+    "oda_boyama": "Room Painting",
+    "tavan_boyama": "Ceiling Painting",
+    "duvar_kagidi": "Wallpaper",
+    "alci_siva": "Plaster & Stucco",
+    "ev_temizligi": "Home Cleaning",
+    "ofis_temizligi": "Office Cleaning",
+    "koltuk_yikama": "Sofa Washing",
+    "insaat_sonrasi": "Post-Construction",
+    "parca_esya": "Partial Moving",
+    "evden_eve": "House Moving",
+    "esya_paketleme": "Packing Service",
+    "ofis_tasima": "Office Moving",
+    "ozel_istek": "Special Request"
+  },
+  "Cards": {
+    "desc_template": "We offer guaranteed service for your {service} needs with our professional team.",
+    "whatsapp_btn": "Get Quote / Contact"
+  },
+  "HowItWorks": {
+    "title": "How It Works?",
+    "subtitle": "Don't deal with complex processes. Let us bring the professional support you need in just 3 simple steps.",
+    "step1_title": "Choose Service",
+    "step1_desc": "Easily find the service you need from our categories.",
+    "step2_title": "Fast Support & Booking",
+    "step2_desc": "Get instant support or book an appointment via our WhatsApp line for emergencies.",
+    "step3_title": "Expert at Your Door",
+    "step3_desc": "Our approved and professional expert is at your address right on time."
+  },
+  "Features": {
+    "title": "Our Service Standards",
+    "f1_title": "Reliable Team",
+    "f1_desc": "All our experts are security-checked and certified professionals.",
+    "f2_title": "Multilingual Support",
+    "f2_desc": "Seamless communication in Turkish, English, and Arabic.",
+    "f3_title": "Fixed Price",
+    "f3_desc": "No surprise costs. Clear price quotation before the job.",
+    "f4_title": "Guaranteed Workmanship",
+    "f4_desc": "All operations performed are under Mr. Fix guarantee."
+  },
+  "Search": {
+    "not_found_title": "Couldn't find it?",
+    "not_found_desc": "Even if it's not on our list, our team can help.",
+    "whatsapp_help": "Ask on WhatsApp",
+    "category_go": "Go to category"
+  }
+}
