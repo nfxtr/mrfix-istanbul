@@ -18,6 +18,7 @@
   "Navbar": {
     "home": "Home",
     "services": "Services",
+    "faq": "FAQ",
     "contact": "Contact",
     "call_now": "Call Now",
     "menu_montaj": "Furniture Assembly",
@@ -237,5 +238,21 @@
     "privacy_policy": "Privacy Policy",
     "terms_of_use": "Terms of Use",
     "address": "Maslak 1453 Street, Tasyoncasi Street Sariyer/Istanbul"
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most common questions about our services.",
+    "q1": "Which areas do you serve?",
+    "a1": "We provide service all over Istanbul, especially in Maslak 1453, Sariyer, Besiktas, Eyüp and Kagithane.",
+    "q2": "How is the pricing determined?",
+    "a2": "An approximate price is shared in the preliminary meeting according to the nature of the work. The exact pricing is finalized after the on-site inspection.",
+    "q3": "Do you provide a warranty for the work?",
+    "a3": "Yes, all assembly and repair workmanship we do is under Mr. Fix warranty. We are by your side for technical problems after the process.",
+    "q4": "Can I call a handyman on the same day?",
+    "a4": "We provide same-day service depending on availability. For Maslak 1453 area, our response time is between 30-60 minutes.",
+    "q5": "Does the handyman provide the materials?",
+    "a5": "In cases requiring parts or materials, you can buy them yourself or the technician can provide quality parts with your approval.",
+    "q6": "Is there language support for foreign customers?",
+    "a6": "Yes, our team can communicate fluently in English and Arabic. We offer perfect service for our foreign customers."
   }
 }

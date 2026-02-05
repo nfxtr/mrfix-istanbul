@@ -139,6 +139,13 @@ export default function Navbar() {
             >
               {t('contact')}
             </Link>
+
+            <Link
+              href={`/${currentLang}/faq`}
+              className="px-4 py-2 text-sm font-bold text-slate-600 hover:text-amber-600 rounded-full hover:bg-amber-50 transition"
+            >
+              {t('faq')}
+            </Link>
           </nav>
 
           {/* RIGHT ACTIONS */}
@@ -223,6 +230,17 @@ export default function Navbar() {
             >
               <span className="font-bold text-slate-700 text-lg">
                 {t('contact')}
+              </span>
+              <ChevronRight className="w-5 h-5 text-slate-400" />
+            </Link>
+
+            <Link
+              href={`/${currentLang}/faq`}
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-between p-4 rounded-xl bg-slate-50 hover:bg-amber-50 transition"
+            >
+              <span className="font-bold text-slate-700 text-lg">
+                {t('faq')}
               </span>
               <ChevronRight className="w-5 h-5 text-slate-400" />
             </Link>

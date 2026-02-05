@@ -47,6 +47,7 @@ export default function Footer() {
 
               <FooterLink href={`/${locale}#services`} label={t('services')} />
               <FooterLink href={`/${locale}/contact`} label={t('contact')} />
+              <FooterLink href={`/${locale}/faq`} label={t('faq')} />
             </ul>
           </div>
 
@@ -68,7 +69,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
-                <span className="text-sm">{t('address')}</span>
+                <span className="text-sm">Maslak 1453 caddesi, Taşyoncası sokak Sarıyer/İstanbul</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-amber-500 shrink-0" />

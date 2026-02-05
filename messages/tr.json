@@ -18,6 +18,7 @@
   "Navbar": {
     "home": "Ana Sayfa",
     "services": "Hizmetler",
+    "faq": "SSS",
     "contact": "İletişim",
     "call_now": "Hemen Ara",
     "menu_montaj": "Mobilya Montajı",
@@ -235,5 +236,21 @@
     "privacy_policy": "Gizlilik Politikası",
     "terms_of_use": "Kullanım Şartları",
     "address": "Maslak 1453 caddesi, taşyoncası sokak Sarıyer/İstanbul"
+  },
+  "FAQ": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Hizmetlerimiz hakkında merak edilen temel soruların yanıtlarını burada bulabilirsiniz.",
+    "q1": "Hangi bölgelere hizmet veriyorsunuz?",
+    "a1": "Başta Maslak 1453, Sarıyer, Beşiktaş, Eyüp ve Kağıthane olmak üzere İstanbul’un tüm bölgelerine usta desteği sağlıyoruz.",
+    "q2": "Fiyatlandırma nasıl yapılıyor?",
+    "a2": "Yapılacak işin niteliğine göre ön görüşmede yaklaşık bir fiyat paylaşılır. Kesin fiyatlandırma yerinde inceleme sonrası netleşir. Sürpriz maliyet çıkmaz.",
+    "q3": "Yaptığınız işlere garanti veriyor musunuz?",
+    "a3": "Evet, yaptığımız tüm montaj ve tamirat işçiliği Mr. Fix garantisi altındadır. İşlem sonrası oluşabilecek teknik sorunlarda yanınızdayız.",
+    "q4": "Aynı gün içinde usta çağırabilir miyim?",
+    "a4": "Müsaitlik durumuna göre aynı gün içinde servis sağlıyoruz. Maslak 1453 ve çevresi için servis hızımız 30-60 dakika arasındadır.",
+    "q5": "Malzeme teminini usta mı yapıyor?",
+    "a5": "Parça veya malzeme gerektiren işlerde dilerseniz siz alabilirsiniz, dilerseniz usta onayınızla kaliteli parça temin edip faturayı yansıtır.",
+    "q6": "Yabancı müşteriler için dil desteği var mı?",
+    "a6": "Evet, ekibimiz İngilizce ve Arapça dillerinde akıcı iletişim kurabilmektedir. Yabancı müşterilerimiz için kusursuz hizmet sunuyoruz."
   }
 }
