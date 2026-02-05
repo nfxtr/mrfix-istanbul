@@ -465,10 +465,10 @@ export default function HomeClient() {
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
                                             </div>
                                             <div className="p-5 lg:p-6 flex flex-col flex-1">
-                                                <h3 className="text-lg lg:text-xl font-bold text-[#0D1C2E] mb-2 uppercase tracking-tight group-hover:text-amber-600 transition-colors">
+                                                <h3 className="text-lg lg:text-xl font-bold text-amber-600 mb-2 tracking-tight transition-colors">
                                                     {tServ(item.id)}
                                                 </h3>
-                                                <p className="text-xs lg:text-sm text-slate-500 mb-4 lg:mb-6 line-clamp-2 italic">
+                                                <p className="text-xs lg:text-sm text-slate-500 mb-4 lg:mb-6 line-clamp-2">
                                                     {tServ(item.id + '_desc')}
                                                 </p>
                                             </div>
@@ -482,7 +482,7 @@ export default function HomeClient() {
                                                     e.stopPropagation();
                                                     window.open(createWhatsAppLink(tServ(item.id)), '_blank');
                                                 }}
-                                                className="w-full py-2.5 lg:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 flex items-center justify-center gap-2 bg-white hover:bg-[#25D366] hover:text-white hover:border-transparent transition-all duration-300 text-sm lg:text-base cursor-pointer active:scale-95 shadow-sm"
+                                                className="w-full py-2.5 lg:py-3 rounded-xl border border-transparent font-bold text-white flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] transition-all duration-300 text-sm lg:text-base cursor-pointer active:scale-95 shadow-md hover:shadow-lg"
                                             >
                                                 <MessageCircle className="w-4 h-4" />
                                                 <span>{tCards('whatsapp_btn')}</span>
