@@ -11,6 +11,7 @@ export default function JsonLd() {
         "telephone": "+905331963061",
         "priceRange": "$$",
         "areaServed": [
+            "Maslak 1453", "Eclipse Maslak", "AS Maslak", "Ağaoğlu Maslak",
             "Maslak", "Sarıyer", "Beşiktaş", "Kağıthane", "Eyüpsultan",
             "Şişli", "Zekeriyaköy", "Göktürk", "Tarabya", "İstinye"
         ],
