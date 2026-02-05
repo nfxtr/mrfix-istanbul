@@ -443,55 +443,62 @@ export default function HomeClient() {
                         </div>
                     </div>
 
+                    {/* Tüm kategorileri render et ama sadece aktif olanı göster (Resimlerin preload olması için) */}
                     <div className="min-h-[120px] pt-6 lg:pt-8 border-t border-slate-100 relative z-20">
-                        <div className={activeTab === 'diger' ? "flex justify-center py-4" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-4"}>
-                            {serviceCategories.find(c => c.id === activeTab)?.items.map((item: any, idx) => {
-                                return (
-                                    <div
-                                        key={idx}
-                                        className={`relative bg-white rounded-[1.5rem] lg:rounded-3xl border border-slate-100 overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full shadow-sm z-50 ${activeTab === 'diger' ? 'w-full max-w-md' : ''}`}
-                                    >
-                                        {/* Detay Sayfası Yönlendirmesi (Bütün kart alanı) */}
+                        {serviceCategories.map((category) => (
+                            <div
+                                key={category.id}
+                                className={`${activeTab === category.id ? 'block animate-fade-in-up' : 'hidden'}`}
+                            >
+                                <div className={category.id === 'diger' ? "flex justify-center py-4" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-4"}>
+                                    {category.items.map((item: any, idx: number) => (
                                         <div
-                                            onClick={() => router.push(`/${locale}/services/${item.id}`)}
-                                            className="flex-1 flex flex-col cursor-pointer group relative z-10"
+                                            key={idx}
+                                            className={`relative bg-white rounded-[1.5rem] lg:rounded-3xl border border-slate-100 overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full shadow-sm z-50 ${category.id === 'diger' ? 'w-full max-w-md' : ''}`}
                                         >
-                                            <div className="relative h-44 lg:h-48 w-full overflow-hidden">
-                                                <img
-                                                    src={item.img}
-                                                    alt={tServ(item.id)}
-                                                    className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
-                                            </div>
-                                            <div className="p-5 lg:p-6 flex flex-col flex-1">
-                                                <h3 className="text-lg lg:text-xl font-bold text-amber-600 mb-2 tracking-tight transition-colors">
-                                                    {tServ(item.id)}
-                                                </h3>
-                                                <p className="text-xs lg:text-sm text-slate-500 mb-4 lg:mb-6 line-clamp-2">
-                                                    {tServ(item.id + '_desc')}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* WhatsApp Butonu (Ayrı Tıklama Alanı) */}
-                                        <div className="px-5 pb-5 lg:px-6 lg:pb-6 mt-auto relative z-30">
-                                            <button
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    e.stopPropagation();
-                                                    window.open(createWhatsAppLink(tServ(item.id)), '_blank');
-                                                }}
-                                                className="w-full py-2.5 lg:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 flex items-center justify-center gap-2 bg-white hover:bg-[#25D366] hover:text-white hover:border-transparent transition-all duration-300 text-sm lg:text-base cursor-pointer active:scale-95 shadow-sm hover:shadow-md"
+                                            {/* Detay Sayfası Yönlendirmesi (Bütün kart alanı) */}
+                                            <div
+                                                onClick={() => router.push(`/${locale}/services/${item.id}`)}
+                                                className="flex-1 flex flex-col cursor-pointer group relative z-10"
                                             >
-                                                <MessageCircle className="w-4 h-4" />
-                                                <span>{tCards('whatsapp_btn')}</span>
-                                            </button>
+                                                <div className="relative h-44 lg:h-48 w-full overflow-hidden">
+                                                    <img
+                                                        src={item.img}
+                                                        alt={tServ(item.id)}
+                                                        className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+                                                        loading="eager" // Tarayıcıya öncelikli yüklemesini söyle
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
+                                                </div>
+                                                <div className="p-5 lg:p-6 flex flex-col flex-1">
+                                                    <h3 className="text-lg lg:text-xl font-bold text-amber-600 mb-2 tracking-tight transition-colors">
+                                                        {tServ(item.id)}
+                                                    </h3>
+                                                    <p className="text-xs lg:text-sm text-slate-500 mb-4 lg:mb-6 line-clamp-2">
+                                                        {tServ(item.id + '_desc')}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            {/* WhatsApp Butonu (Ayrı Tıklama Alanı) */}
+                                            <div className="px-5 pb-5 lg:px-6 lg:pb-6 mt-auto relative z-30">
+                                                <button
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        e.stopPropagation();
+                                                        window.open(createWhatsAppLink(tServ(item.id)), '_blank');
+                                                    }}
+                                                    className="w-full py-2.5 lg:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 flex items-center justify-center gap-2 bg-white hover:bg-[#25D366] hover:text-white hover:border-transparent transition-all duration-300 text-sm lg:text-base cursor-pointer active:scale-95 shadow-sm hover:shadow-md"
+                                                >
+                                                    <MessageCircle className="w-4 h-4" />
+                                                    <span>{tCards('whatsapp_btn')}</span>
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                );
-                            })}
-                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
