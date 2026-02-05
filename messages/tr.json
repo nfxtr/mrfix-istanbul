@@ -263,5 +263,18 @@
     "cta_desc": "Hemen uzman ekibimizle iletişime geçin, her türlü sorunuzu yanıtlayalım.",
     "cta_whatsapp": "WhatsApp'tan Sorun",
     "cta_form": "İletişim Formu"
+  },
+  "ServiceAreas": {
+    "title": "Hizmet Bölgelerimiz",
+    "subtitle": "İstanbul'un Avrupa yakasında, özellikle aşağıdaki bölgelere 30-60 dakika içinde hızlı servis sağlıyoruz.",
+    "areas": "Maslak 1453 • Sarıyer • Beşiktaş • Kağıthane • Eyüpsultan • Şişli • Tarabya • İstinye • Vadi İstanbul • Zekeriyaköy • Göktürk"
+  },
+  "SEOBlocks": {
+    "montaj_title": "Maslak ve Sarıyer Mobilya Montaj Ustası",
+    "montaj_text": "Yeni taşındığınız Maslak 1453 veya Vadi İstanbul evinizdeki mobilya kurulumları için profesyonel destek mi arıyorsunuz? IKEA, Koçtaş ve Vivense gibi tüm markaların gardırop, baza ve çalışma masası montajını titizlikle yapıyoruz.",
+    "tamirat_title": "Beşiktaş ve Kağıthane Ev Tamirat Servisi",
+    "tamirat_text": "Beşiktaş ve çevresinde acil musluk tamiri, korniş montajı veya kapı kilidi değişimi mi gerekli? Mr. Fix ekibi olarak bölgeye hakimiz ve tüm teknik sorunlarınıza garantili çözümler sunuyoruz.",
+    "elektrik_title": "Sarıyer Sertifikalı Elektrikçi",
+    "elektrik_text": "Sarıyer, Zekeriyaköy ve Göktürk bölgesinde avize montajı, sigorta arızası ve LED aydınlatma işleriniz için uzman elektrikçimiz kapınızda. Elektrik güvenliğinizi riske atmayın, profesyonel yardım alın."
   }
 }

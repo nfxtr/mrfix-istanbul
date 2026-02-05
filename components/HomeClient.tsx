@@ -588,6 +588,64 @@ export default function HomeClient() {
                 </div>
             </section>
 
+            {/* --- HİZMET BÖLGELERİMİZ (SEO SEÇENEĞİ) --- */}
+            <section className="py-16 lg:py-24 bg-slate-50">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                        <div>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold mb-4">
+                                <MapPin className="w-3 h-3" />
+                                {t('ServiceAreas.title')}
+                            </div>
+                            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#0D1C2E] mb-6">
+                                {t('ServiceAreas.title')}
+                            </h2>
+                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                                {t('ServiceAreas.subtitle')}
+                            </p>
+                            <div className="flex flex-wrap gap-2">
+                                {t('ServiceAreas.areas').split(' • ').map((area, idx) => (
+                                    <span key={idx} className="px-4 py-2 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-700 shadow-sm">
+                                        {area}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="bg-white p-8 lg:p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-full opacity-50 -mr-16 -mt-16 transition-transform group-hover:scale-110" />
+                            <div className="space-y-8 relative z-10">
+                                <div>
+                                    <h3 className="text-xl font-bold text-[#0D1C2E] mb-3 flex items-center gap-2">
+                                        <div className="w-1.5 h-6 bg-amber-500 rounded-full" />
+                                        {t('SEOBlocks.montaj_title')}
+                                    </h3>
+                                    <p className="text-slate-600 text-sm leading-relaxed">
+                                        {t('SEOBlocks.montaj_text')}
+                                    </p>
+                                </div>
+                                <div className="border-t border-slate-100 pt-8">
+                                    <h3 className="text-xl font-bold text-[#0D1C2E] mb-3 flex items-center gap-2">
+                                        <div className="w-1.5 h-6 bg-blue-500 rounded-full" />
+                                        {t('SEOBlocks.tamirat_title')}
+                                    </h3>
+                                    <p className="text-slate-600 text-sm leading-relaxed">
+                                        {t('SEOBlocks.tamirat_text')}
+                                    </p>
+                                </div>
+                                <div className="border-t border-slate-100 pt-8">
+                                    <h3 className="text-xl font-bold text-[#0D1C2E] mb-3 flex items-center gap-2">
+                                        <div className="w-1.5 h-6 bg-green-500 rounded-full" />
+                                        {t('SEOBlocks.elektrik_title')}
+                                    </h3>
+                                    <p className="text-slate-600 text-sm leading-relaxed">
+                                        {t('SEOBlocks.elektrik_text')}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }

@@ -10,6 +10,10 @@ export default function JsonLd() {
         "url": "https://mrfixistanbul.com",
         "telephone": "+905331963061",
         "priceRange": "$$",
+        "areaServed": [
+            "Maslak", "Sarıyer", "Beşiktaş", "Kağıthane", "Eyüpsultan",
+            "Şişli", "Zekeriyaköy", "Göktürk", "Tarabya", "İstinye"
+        ],
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Maslak 1453 caddesi, taşyoncası sokak",

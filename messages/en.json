@@ -265,5 +265,18 @@
     "cta_desc": "Contact our expert team immediately, we will answer all your questions.",
     "cta_whatsapp": "Ask on WhatsApp",
     "cta_form": "Contact Form"
+  },
+  "ServiceAreas": {
+    "title": "Our Service Areas",
+    "subtitle": "We provide fast service within 30-60 minutes on the European side of Istanbul, especially in the following regions.",
+    "areas": "Maslak 1453 • Sariyer • Besiktas • Kagithane • Eyupsultan • Sisli • Tarabya • Istinye • Vadi Istanbul • Zekeriyakoy • Gokturk"
+  },
+  "SEOBlocks": {
+    "montaj_title": "Furniture Assembly Expert in Maslak & Sariyer",
+    "montaj_text": "Are you looking for professional furniture installation in your new home in Maslak 1453 or Vadi Istanbul? We carefully assemble wardrobes, beds, and desks from all brands like IKEA and Wayfair.",
+    "tamirat_title": "Home Repair Service in Besiktas & Kagithane",
+    "tamirat_text": "Need urgent faucet repair, curtain rod installation, or door lock change in Besiktas and surroundings? As the Mr. Fix team, we know the area well and offer guaranteed solutions to all your technical problems.",
+    "elektrik_title": "Certified Electrician in Sariyer",
+    "elektrik_text": "Our expert electrician is at your door for chandelier installation, fuse failure, and LED lighting works in Sariyer, Zekeriyakoy, and Gokturk. Don't risk your electrical safety, get professional help."
   }
 }
