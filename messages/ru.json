@@ -25,7 +25,8 @@
     "menu_elektrik": "Электрика и освещение",
     "menu_boya": "Малярные работы",
     "menu_temizlik": "Уборка",
-    "menu_nakliye": "Перевозки"
+    "menu_nakliye": "Перевозки",
+    "faq": "FAQ"
   },
   "Hero": {
     "title_start": "Для Вашего Дома",
