@@ -162,7 +162,13 @@
     "all_rights_reserved": "Tutti i diritti riservati.",
     "privacy_policy": "Politica sulla Privacy",
     "terms_of_use": "Termini di Utilizzo",
+    "faq": "FAQ",
     "address": "Via Maslak 1453, Via Tasyoncasi Sariyer/Istanbul"
+  },
+  "ServiceAreas": {
+    "title": "Le Nostre Aree di Servizio",
+    "subtitle": "Forniamo un servizio rapido in 30-60 minuti nella parte europea di Istanbul, in particolare nelle seguenti regioni.",
+    "areas": "Maslak 1453 • Eclipse Maslak • AS Maslak • Agaoglu Maslak • Sariyer • Besiktas • Kagithane • Eyupsultan • Sisli • Tarabya • Istinye • Vadi Istanbul • Zekeriyakoy • Gokturk"
   },
   "CookieBanner": {
     "message": "We use cookies to provide you with a better service.",

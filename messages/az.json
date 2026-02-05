@@ -162,7 +162,13 @@
     "all_rights_reserved": "Bütün hüquqlar qorunur.",
     "privacy_policy": "Məxfilik Siyasəti",
     "terms_of_use": "İstifadə Şərtləri",
+    "faq": "FAQ",
     "address": "Maslak 1453 küçəsi, Taşyoncası küçəsi Sarıyer/İstanbul"
+  },
+  "ServiceAreas": {
+    "title": "Xidmət Bölgələrimiz",
+    "subtitle": "Biz İstanbulun Avropa tərəfində, xüsusən aşağıdakı bölgələrdə 30-60 dəqiqə ərzində sürətli xidmət göstəririk.",
+    "areas": "Maslak 1453 • Eclipse Maslak • AS Maslak • Ağaoğlu Maslak • Sarıyer • Beşiktaş • Kağıthane • Eyüpsultan • Şişli • Tarabya • İstinye • Vadi İstanbul • Zekeriyaköy • Göktürk"
   },
   "CookieBanner": {
     "message": "We use cookies to provide you with a better service.",
