@@ -3,8 +3,8 @@ import { MetadataRoute } from 'next';
 const baseUrl = 'https://mrfixistanbul.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const locales = ['tr', 'en', 'ar', 'ru', 'de', 'fa'];
-    const paths = ['/', '/contact'];
+    const locales = ['tr', 'en', 'ru', 'ar', 'de', 'fr', 'es', 'it', 'fa', 'az', 'nl', 'uk'];
+    const paths = ['/', '/contact', '/faq', '/privacy', '/terms'];
 
     let sitemapEntries: MetadataRoute.Sitemap = [];
 
