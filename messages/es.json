@@ -1,9 +1,31 @@
 {
+  "Metadata": {
+    "home": {
+      "title": "Handyman Estambul | Montaje y Reparación",
+      "description": "Servicios profesionales de mantenimiento en Estambul. Montaje de muebles, electricidad, fontanería, pintura y reformas integrales. Equipo de confianza."
+    },
+    "contact": {
+      "title": "Llamar a un Handyman | Servicio de Reparación en Estambul",
+      "description": "Soporte técnico rápido y servicio de mantenimiento en Maslak 1453 y en todo Estambul. Reserve un experto ahora."
+    }
+  },
   "Navigation": {
     "search_placeholder": "Ej: Lámpara, TV, Pintura...",
     "search_btn": "Buscar",
     "support": "Soporte",
     "online": "En línea"
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "call_now": "Llamar ahora",
+    "menu_montaj": "Montaje de muebles",
+    "menu_tamirat": "Reparaciones",
+    "menu_elektrik": "Electricidad e iluminación",
+    "menu_boya": "Pintura y yeso",
+    "menu_temizlik": "Servicios de limpieza",
+    "menu_nakliye": "Transporte y mudanza"
   },
   "Hero": {
     "title_start": "Para Tu Hogar",
@@ -91,5 +113,60 @@
     "not_found_desc": "Incluso si no está en nuestra lista, nuestro equipo puede ayudar.",
     "whatsapp_help": "Preguntar por WhatsApp",
     "category_go": "Ir a la categoría"
+  },
+  "ContactPage": {
+    "title": "Contacto",
+    "subtitle": "Contáctenos para sus preguntas, solicitudes o citas.",
+    "info_title": "Información de contacto",
+    "form_title": "Escríbanos",
+    "form_desc": "Puede comunicarse con nosotros completando el formulario a continuación. Le responderemos lo antes posible.",
+    "labels": {
+      "name_placeholder": "Su nombre",
+      "phone_placeholder": "Su número de teléfono",
+      "subject_placeholder": "Asunto",
+      "message_placeholder": "Su mensaje..."
+    },
+    "btn_send": "Enviar mensaje",
+    "success_title": "¡Mensaje recibido!",
+    "success_desc": "Gracias por contactarnos. Nuestro equipo le responderá lo antes posible.",
+    "error_message": "El mensaje no se pudo enviar. Inténtelo de nuevo más tarde o comuníquese a través de WhatsApp.",
+    "contact_info": {
+      "phone": "Teléfono",
+      "whatsapp": "Soporte de WhatsApp",
+      "address": "Dirección",
+      "working_hours": "Horas de trabajo",
+      "working_hours_val": "09:00 - 00:00",
+      "call_now": "Llamar ahora",
+      "chat_whatsapp": "Chat en WhatsApp"
+    },
+    "checkbox_consent": "I have read and agree to the <link>Privacy Policy</link>.",
+    "checkbox_required_error": "Please accept the Privacy Policy to proceed."
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last Updated: 02/03/2025",
+    "content": "<h3>Agreement</h3><p>The use of this website and all other websites under Mr. Fix domain is subject to the terms and conditions explained here. When the user visits this website, they agree to be bound by these terms and conditions, which constitute a binding agreement between the user and Mr. Fix.</p><h3>User Information</h3><p>Mr. Fix never collects any type of personally identifiable information about the user such as name, address, phone number unless they choose to provide it via contact forms or service requests. E-mails, name, surname and address information are only asked if the user requests a service or contacts us, and this information is only used for customer services purposes and Mr. Fix doesn’t share any user information with any other entity. However, when the user visits Mr. Fix’s websites, our computers may automatically collect statistics about the user’s visit. Mr. Fix may monitor statistics such as how many users visit the website, the users’ IP addresses, and which browsers are used. Mr. Fix only uses aggregated statistics of this visitor information to help improve the performance of the website.</p><h3>Information Use</h3><p>Mr. Fix uses the information collected primarily to process the task for which the user visited the website (e.g., repair or assembly services). Mr. Fix takes all reasonable precautions to prevent unauthorized access to this information.</p><h3>Data Collection & Cookies</h3><p>A 'cookie' is a piece of information that the website sends to the user’s browser. A user can use Mr. Fix’s website without cookies. Mr. Fix uses cookies to enhance the user experience. Mr. Fix cannot use these cookies to personally identify the user in any way.</p><h3>Disclosure by Law</h3><p>If Mr. Fix is required by law to disclose certain information to local, national or international law enforcement authorities, it will do so.</p><h3>Contacting Mr. Fix</h3><p>If you have any questions about Mr. Fix’s Privacy Policy, please email info@mrfixistanbul.com.</p>"
+  },
+  "TermsOfUse": {
+    "title": "Terms of Use",
+    "last_updated": "02/03/2025",
+    "content": "<h3><strong>Agreement</strong></h3><p>The use of this website and all other platforms under the Mr. Fix domain is subject to the terms and conditions explained here. When the user visits this website, they agree to be bound by these terms and conditions.</p><br><br><h3><strong>Website Content</strong></h3><p>All content available on the Mr. Fix website shall only be used for informational purposes regarding our repair and assembly services. The content should not be considered as a final price offer or technical advice without an on-site inspection. Mr. Fix is not responsible for misunderstandings arising from the information on the website without direct consultation.</p><br><br><h3><strong>Copyright & Intellectual Property</strong></h3><p>All content provided by Mr. Fix (images, text, logos) is protected by copyright laws. The content is owned by Mr. Fix. Material contained in this website may not be copied, reproduced, or redistributed without prior written consent.</p><br><br><h3><strong>Usage Limitations</strong></h3><p>The user may not use automated scripts or programs to extract data from the Mr. Fix website. You must not reproduce or exploit the pages and content for commercial gain.</p><br><br><h3><strong>Limitation of Liability</strong></h3><p>Under no circumstances shall Mr. Fix be liable for any damages arising out of or in connection with the use of this website. This does not apply to the liability for services actually rendered, which are covered under our service warranty.</p><br><br><h3><strong>Contact Information</strong></h3><p>Mr. Fix Istanbul<br>Maslak 1453, Cariyer/Istanbul<br>Phone: +90 533 196 30 61<br>Email: info@mrfixistanbul.com</p>"
+  },
+  "Footer": {
+    "brand_desc": "Servicios profesionales de reparación, montaje y mantenimiento en todo Estambul. Ofrecemos soluciones confiables y rápidas para cada problema en su hogar.",
+    "quick_links": "Enlaces Rápidos",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "home": "Inicio",
+    "all_rights_reserved": "Todos los derechos reservados.",
+    "privacy_policy": "Política de Privacidad",
+    "terms_of_use": "Términos de Uso",
+    "address": "Calle Maslak 1453, Calle Tasyoncasi Sariyer/Estambul"
+  },
+  "CookieBanner": {
+    "message": "We use cookies to provide you with a better service.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "privacy_link": "Privacy Policy"
   }
 }

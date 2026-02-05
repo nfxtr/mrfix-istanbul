@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const baseUrl = 'https://www.mrfix-istanbul.com';
+const baseUrl = 'https://mrfixistanbul.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const locales = ['tr', 'en', 'ar', 'ru', 'de', 'fa'];

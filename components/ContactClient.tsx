@@ -1,9 +1,10 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
-import { Phone, MapPin, Clock, Send, CheckCircle2 } from 'lucide-react';
-import { useState } from 'react';
+import { Phone, MapPin, Clock, Send, CheckCircle2, Check } from 'lucide-react';
+import { useRef, useState } from 'react';
+import Link from 'next/link';
 
 // Custom WhatsApp Icon Component
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -21,14 +22,26 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export default function ContactClient() {
     const t = useTranslations('ContactPage');
+    const locale = useLocale();
     const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+    const [consentError, setConsentError] = useState(false);
+    const formRef = useRef<HTMLDivElement>(null);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setConsentError(false);
+
+        const formData = new FormData(e.currentTarget);
+
+        // Custom Validation for Consent
+        if (!formData.get('privacy-consent')) {
+            setConsentError(true);
+            return;
+        }
+
         setFormStatus('submitting');
 
         try {
-            const formData = new FormData(e.currentTarget);
             const data = {
                 name: formData.get('name'),
                 phone: formData.get('phone'),
@@ -44,6 +57,16 @@ export default function ContactClient() {
 
             if (response.ok) {
                 setFormStatus('success');
+                // Scroll to top of the form container to ensure message is visible
+                // Using a small timeout to ensure DOM update is complete
+                setTimeout(() => {
+                    const formElement = formRef.current;
+                    if (formElement) {
+                        const yOffset = -100; // Offset for sticky header if any
+                        const y = formElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                }, 100);
             } else {
                 const resData = await response.json();
                 console.error('Form submission failed', resData);
@@ -57,9 +80,9 @@ export default function ContactClient() {
     };
 
     const contactDetails = [
-        { icon: Phone, title: t('contact_info.phone'), value: "+90 (533) 196 30 61", href: "tel:+905331963061", color: "text-blue-500", bg: "bg-blue-50" },
-        { icon: WhatsAppIcon, title: t('contact_info.whatsapp'), value: "+90 (533) 196 30 61", href: "https://wa.me/905331963061", color: "text-green-500", bg: "bg-green-50" },
-        { icon: MapPin, title: t('contact_info.address'), value: "Maslak 1453 caddesi, taşyoncası sokak Sarıyer/İstanbul", href: "#", color: "text-amber-500", bg: "bg-amber-50" },
+        { icon: Phone, title: t('contact_info.phone'), value: t('contact_info.call_now'), href: "tel:+905331963061", color: "text-blue-500", bg: "bg-blue-50" },
+        { icon: WhatsAppIcon, title: t('contact_info.whatsapp'), value: t('contact_info.chat_whatsapp'), href: "https://wa.me/905331963061", color: "text-green-500", bg: "bg-green-50" },
+        { icon: MapPin, title: t('contact_info.address'), value: "Maslak 1453 caddesi, taşyoncası sokak Sarıyer/İstanbul", href: null, color: "text-amber-500", bg: "bg-amber-50" },
         { icon: Clock, title: t('contact_info.working_hours'), value: t('contact_info.working_hours_val'), href: null, color: "text-purple-500", bg: "bg-purple-50" },
     ];
 
@@ -96,20 +119,35 @@ export default function ContactClient() {
                         className="lg:col-span-2 space-y-6"
                     >
                         {contactDetails.map((item, idx) => (
-                            <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4 hover:shadow-md transition-shadow">
-                                <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${item.bg} ${item.color}`}>
+                            <div key={idx} className={`relative bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex gap-4 transition-all duration-300 group
+                                ${item.href ? 'hover:shadow-lg hover:border-amber-200 cursor-pointer active:scale-[0.99]' : ''} 
+                                ${item.title ? 'items-start' : 'items-center'}`}
+                            >
+                                {/* Make entire card clickable if href exists */}
+                                {item.href && (
+                                    <a
+                                        href={item.href}
+                                        className="absolute inset-0 z-10"
+                                        aria-label={item.value}
+                                    />
+                                )}
+
+                                <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300 ${item.href ? 'group-hover:bg-[#0D1C2E] group-hover:text-white' : ''} ${item.bg} ${item.color}`}>
                                     <item.icon className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-slate-800 mb-1">{item.title}</h3>
-                                    {item.href ? (
-                                        <a href={item.href} className="text-slate-600 hover:text-amber-600 transition font-medium text-sm md:text-base">
-                                            {item.value}
-                                        </a>
-                                    ) : (
-                                        <p className="text-slate-600 font-medium text-sm md:text-base">{item.value}</p>
-                                    )}
+                                    {item.title && <h3 className="font-bold text-slate-800 mb-1">{item.title}</h3>}
+                                    <p className={`font-medium text-sm md:text-base transition-colors ${item.href ? 'text-slate-600 group-hover:text-amber-600' : 'text-slate-600'}`}>
+                                        {item.value}
+                                    </p>
                                 </div>
+
+                                {/* Optional: Add a subtle arrow indicator for clickable items */}
+                                {item.href && (
+                                    <div className="ml-auto opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 self-center">
+                                        <Send className="w-5 h-5 text-amber-500 -rotate-45" />
+                                    </div>
+                                )}
                             </div>
                         ))}
 
@@ -141,10 +179,10 @@ export default function ContactClient() {
                         transition={{ delay: 0.3 }}
                         className="lg:col-span-3"
                     >
-                        <div className="bg-white p-8 md:p-10 rounded-[2rem] shadow-xl border border-slate-100 h-full relative overflow-hidden">
+                        <div ref={formRef} className="bg-white p-8 md:p-10 rounded-[2rem] shadow-xl border border-slate-100 h-full relative overflow-hidden transition-all duration-300">
 
                             {formStatus === 'success' ? (
-                                <div className="absolute inset-0 z-10 bg-white flex flex-col items-center justify-center text-center p-8 animate-fade-in-up">
+                                <div className="flex flex-col items-center justify-center text-center p-8 min-h-[600px]">
                                     <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-500">
                                         <CheckCircle2 className="w-10 h-10" />
                                     </div>
@@ -164,7 +202,7 @@ export default function ContactClient() {
                                         <p className="text-slate-500">{t('form_desc')}</p>
                                     </div>
 
-                                    <form onSubmit={handleSubmit} className="space-y-5">
+                                    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                             <div className="space-y-2">
                                                 <label className="text-sm font-bold text-slate-700 ml-1">{t('labels.name_placeholder')}</label>
@@ -208,6 +246,39 @@ export default function ContactClient() {
                                                 className="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition-all font-medium text-slate-800 placeholder:text-slate-400 resize-none"
                                                 placeholder="..."
                                             ></textarea>
+                                        </div>
+
+                                        <div className="flex flex-col gap-1">
+                                            <div className="flex items-center gap-3 pt-2">
+                                                <div className="relative flex items-center">
+                                                    <input
+                                                        id="privacy-consent"
+                                                        name="privacy-consent"
+                                                        type="checkbox"
+                                                        onChange={() => setConsentError(false)}
+                                                        className={`peer appearance-none w-4 h-4 border-2 rounded bg-white checked:bg-amber-500 checked:border-amber-500 focus:ring-4 focus:ring-amber-500/20 cursor-pointer transition-all ${consentError ? 'border-red-500' : 'border-slate-300'}`}
+                                                    />
+                                                    <Check className="absolute w-3 h-3 text-white pointer-events-none opacity-0 peer-checked:opacity-100 left-0.5 top-0.5 transition-opacity" strokeWidth={3} />
+                                                </div>
+                                                <label htmlFor="privacy-consent" className={`text-sm font-medium cursor-pointer select-none transition-colors ${consentError ? 'text-red-500' : 'text-slate-600'}`}>
+                                                    {t.rich('checkbox_consent', {
+                                                        link: (chunks) => (
+                                                            <Link
+                                                                href={`/${locale}/privacy`}
+                                                                className="text-amber-500 hover:text-amber-600 font-bold hover:underline transition-colors relative z-10"
+                                                                target="_blank"
+                                                            >
+                                                                {chunks}
+                                                            </Link>
+                                                        )
+                                                    })}
+                                                </label>
+                                            </div>
+                                            {consentError && (
+                                                <p className="text-red-500 text-xs font-bold pl-7 animate-pulse">
+                                                    {t('checkbox_required_error')}
+                                                </p>
+                                            )}
                                         </div>
 
                                         <div className="pt-2">

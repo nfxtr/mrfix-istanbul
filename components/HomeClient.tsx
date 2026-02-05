@@ -11,6 +11,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -43,6 +44,7 @@ export default function HomeClient() {
     const locale = useLocale();
     const isRTL = locale === 'ar';
     const searchParams = useSearchParams();
+
 
     const [mounted, setMounted] = useState(false);
     const [activeTab, setActiveTab] = useState('montaj');
@@ -524,23 +526,35 @@ export default function HomeClient() {
                             <motion.div key={activeTab} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3 }}
                                 className={activeTab === 'diger' ? "flex justify-center py-4" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-4"}
                             >
-                                {serviceCategories.find(c => c.id === activeTab)?.items.map((item, idx) => (
-                                    <div key={idx} className={`group bg-white rounded-[1.5rem] lg:rounded-3xl border border-slate-100 overflow-hidden hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full shadow-sm ${activeTab === 'diger' ? 'w-full max-w-md' : ''}`}>
-                                        <div className="relative h-44 lg:h-48 w-full overflow-hidden">
-                                            <img src={item.img} alt={item.name} className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
-                                        </div>
-                                        <div className="p-5 lg:p-6 flex flex-col flex-1">
-                                            <h3 className="text-lg lg:text-xl font-bold text-[#0D1C2E] mb-2 group-hover:text-amber-600 transition-colors">{item.name}</h3>
-                                            <p className="text-xs lg:text-sm text-slate-500 mb-4 lg:mb-6 line-clamp-2">{tCards('desc_template', { service: item.name })}</p>
-                                            <div className="mt-auto">
-                                                <a href={createWhatsAppLink(item.name)} target="_blank" rel="noopener noreferrer" className="w-full py-2.5 lg:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 flex items-center justify-center gap-2 group-hover:bg-[#25D366] group-hover:text-white group-hover:border-transparent transition-all duration-300 text-sm lg:text-base">
-                                                    <MessageCircle className="w-4 h-4" /><span>{tCards('whatsapp_btn')}</span>
-                                                </a>
+                                {serviceCategories.find(c => c.id === activeTab)?.items.map((item: any, idx) => {
+                                    const CardContent = () => (
+                                        <>
+                                            <div className="relative h-44 lg:h-48 w-full overflow-hidden">
+                                                <img src={item.img} alt={item.name} className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
                                             </div>
+                                            <div className="p-5 lg:p-6 flex flex-col flex-1">
+                                                <h3 className="text-lg lg:text-xl font-bold text-[#0D1C2E] mb-2 group-hover:text-amber-600 transition-colors">{item.name}</h3>
+                                                <p className="text-xs lg:text-sm text-slate-500 mb-4 lg:mb-6 line-clamp-2">{tCards('desc_template', { service: item.name })}</p>
+                                                <div className="mt-auto">
+                                                    <div className="w-full py-2.5 lg:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 flex items-center justify-center gap-2 group-hover:bg-[#25D366] group-hover:text-white group-hover:border-transparent transition-all duration-300 text-sm lg:text-base">
+                                                        <MessageCircle className="w-4 h-4" /><span>{tCards('whatsapp_btn')}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </>
+                                    );
+
+                                    const containerClass = `group bg-white rounded-[1.5rem] lg:rounded-3xl border border-slate-100 overflow-hidden hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full shadow-sm ${activeTab === 'diger' ? 'w-full max-w-md' : ''}`;
+
+                                    return (
+                                        <div key={idx} className={containerClass}>
+                                            <a href={createWhatsAppLink(item.name)} target="_blank" rel="noopener noreferrer" className="contents">
+                                                <CardContent />
+                                            </a>
                                         </div>
-                                    </div>
-                                ))}
+                                    );
+                                })}
                             </motion.div>
                         </AnimatePresence>
                     </div>

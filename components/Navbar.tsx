@@ -19,6 +19,7 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 const languages = [
   { code: 'tr', name: 'Türkçe', flagCode: 'tr' },
@@ -36,15 +37,16 @@ const languages = [
 ];
 
 const servicesList = [
-  { name: 'Mobilya Montajı', icon: Hammer, categoryId: 'montaj' },
-  { name: 'Tamirat İşleri', icon: Wrench, categoryId: 'tamirat' },
-  { name: 'Elektrik & Aydınlatma', icon: Zap, categoryId: 'elektrik' },
-  { name: 'Boya & Badana', icon: Paintbrush, categoryId: 'boya' },
-  { name: 'Temizlik Hizmetleri', icon: Sparkles, categoryId: 'temizlik' },
-  { name: 'Nakliye & Taşıma', icon: Truck, categoryId: 'nakliye' },
+  { icon: Hammer, categoryId: 'montaj' },
+  { icon: Wrench, categoryId: 'tamirat' },
+  { icon: Zap, categoryId: 'elektrik' },
+  { icon: Paintbrush, categoryId: 'boya' },
+  { icon: Sparkles, categoryId: 'temizlik' },
+  { icon: Truck, categoryId: 'nakliye' },
 ];
 
 export default function Navbar() {
+  const t = useTranslations('Navbar');
   const router = useRouter();
   const pathname = usePathname();
   const currentLang = pathname?.split('/')[1] || 'tr';
@@ -84,8 +86,8 @@ export default function Navbar() {
       {/* HEADER */}
       <header
         className={`fixed top-0 left-0 right-0 z-[999] transition-all duration-300 ${isScrolled || mobileMenuOpen
-            ? 'bg-white/95 backdrop-blur-md shadow-md py-3'
-            : 'bg-transparent py-5'
+          ? 'bg-white/95 backdrop-blur-md shadow-md py-3'
+          : 'bg-transparent py-5'
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -102,13 +104,13 @@ export default function Navbar() {
               href={`/${currentLang}`}
               className="px-4 py-2 text-sm font-bold text-slate-600 hover:text-amber-600 rounded-full hover:bg-amber-50 transition"
             >
-              {currentLang === 'en' ? 'Home' : 'Ana Sayfa'}
+              {t('home')}
             </Link>
 
-            {/* --- HİZMETLER DROPDOWN (GÖRSELDEKİ GİBİ DÜZELTİLDİ) --- */}
+            {/* --- HİZMETLER DROPDOWN --- */}
             <div className="relative group">
               <button className="flex items-center gap-1 px-4 py-2 text-sm font-bold text-slate-600 hover:text-amber-600 rounded-full hover:bg-amber-50">
-                {currentLang === 'en' ? 'Services' : 'Hizmetler'}
+                {t('services')}
                 <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition" />
               </button>
 
@@ -123,7 +125,7 @@ export default function Navbar() {
                     >
                       <service.icon className="w-4 h-4 text-amber-500 group-hover/item:scale-110 transition-transform" />
                       <span className="text-sm font-bold text-slate-700">
-                        {service.name}
+                        {t(`menu_${service.categoryId}`)}
                       </span>
                     </Link>
                   ))}
@@ -135,7 +137,7 @@ export default function Navbar() {
               href={`/${currentLang}/contact`}
               className="px-4 py-2 text-sm font-bold text-slate-600 hover:text-amber-600 rounded-full hover:bg-amber-50 transition"
             >
-              {currentLang === 'en' ? 'Contact' : 'İletişim'}
+              {t('contact')}
             </Link>
           </nav>
 
@@ -156,10 +158,23 @@ export default function Navbar() {
               <ChevronDown className="w-4 h-4" />
             </button>
 
-            <button className="hidden md:flex items-center gap-2 bg-[#0D1C2E] text-white px-6 py-2.5 rounded-full font-bold hover:bg-slate-800 transition">
+            <a
+              href="https://wa.me/905331963061"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'call_now_click', {
+                    event_category: 'Contact',
+                    event_label: 'Navbar'
+                  });
+                }
+              }}
+              className="hidden md:flex items-center gap-2 bg-[#0D1C2E] text-white px-6 py-2.5 rounded-full font-bold hover:bg-slate-800 transition"
+            >
               <Phone className="w-4 h-4 text-amber-400" />
-              {currentLang === 'en' ? 'Call Now' : 'Hemen Ara'}
-            </button>
+              {t('call_now')}
+            </a>
 
             {/* Mobile Menu Toggle Button */}
             <button
@@ -185,7 +200,7 @@ export default function Navbar() {
               className="flex items-center justify-between p-4 rounded-xl bg-slate-50 hover:bg-amber-50 transition"
             >
               <span className="font-bold text-slate-700 text-lg">
-                {currentLang === 'en' ? 'Home' : 'Ana Sayfa'}
+                {t('home')}
               </span>
               <ChevronRight className="w-5 h-5 text-slate-400" />
             </Link>
@@ -196,7 +211,7 @@ export default function Navbar() {
               className="flex items-center justify-between p-4 rounded-xl bg-slate-50 hover:bg-amber-50 transition"
             >
               <span className="font-bold text-slate-700 text-lg">
-                {currentLang === 'en' ? 'Services' : 'Hizmetler'}
+                {t('services')}
               </span>
               <ChevronRight className="w-5 h-5 text-slate-400" />
             </Link>
@@ -207,18 +222,29 @@ export default function Navbar() {
               className="flex items-center justify-between p-4 rounded-xl bg-slate-50 hover:bg-amber-50 transition"
             >
               <span className="font-bold text-slate-700 text-lg">
-                {currentLang === 'en' ? 'Contact' : 'İletişim'}
+                {t('contact')}
               </span>
               <ChevronRight className="w-5 h-5 text-slate-400" />
             </Link>
 
             <div className="mt-4 pt-4 border-t border-slate-100">
-              <button className="w-full bg-[#0D1C2E] text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 shadow-lg active:scale-95 transition">
+              <a
+                href="tel:+905331963061"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'call_now_click', {
+                      event_category: 'Contact',
+                      event_label: 'Mobile Menu'
+                    });
+                  }
+                }}
+                className="w-full bg-[#0D1C2E] text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 shadow-lg active:scale-95 transition"
+              >
                 <Phone className="w-5 h-5 text-amber-400" />
                 <span className="text-lg">
-                  {currentLang === 'en' ? 'Call Now' : 'Hemen Ara'}
+                  {t('call_now')}
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -247,8 +273,8 @@ export default function Navbar() {
                     key={lang.code}
                     onClick={() => changeLanguage(lang.code)}
                     className={`flex items-center gap-3 p-3 rounded-xl border-2 transition hover:scale-[1.02] active:scale-95 ${currentLang === lang.code
-                        ? 'border-amber-500 bg-amber-50 ring-1 ring-amber-500'
-                        : 'border-slate-100 hover:border-slate-300 bg-white'
+                      ? 'border-amber-500 bg-amber-50 ring-1 ring-amber-500'
+                      : 'border-slate-100 hover:border-slate-300 bg-white'
                       }`}
                   >
                     <Image

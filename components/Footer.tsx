@@ -1,12 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation'; // Removed in favor of useLocale
+import { useTranslations, useLocale } from 'next-intl';
 import {
-  Facebook,
-  Instagram,
-  Twitter,
-  Linkedin,
   MapPin,
   Phone,
   Mail,
@@ -14,9 +11,9 @@ import {
 } from 'lucide-react';
 
 export default function Footer() {
-  const pathname = usePathname();
-  // URL'den mevcut dili al (Örn: /en/services -> 'en')
-  const currentLang = pathname?.split('/')[1] || 'tr';
+  const t = useTranslations('Footer');
+  const tServices = useTranslations('ServiceItems'); // Reuse service names
+  const locale = useLocale();
 
   const currentYear = new Date().getFullYear();
 
@@ -29,55 +26,49 @@ export default function Footer() {
 
           {/* 1. SÜTUN: MARKA & HAKKINDA */}
           <div className="space-y-4">
-            <Link href={`/${currentLang}`} className="flex items-center gap-1 mb-4">
+            <Link href={`/${locale}`} className="flex items-center gap-1 mb-4">
               <span className="text-3xl font-black text-white">
                 Mr.<span className="text-amber-500">Fix</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed text-slate-400">
-              İstanbul genelinde profesyonel tamirat, montaj ve bakım hizmetleri.
-              Evinizdeki her sorun için güvenilir ve hızlı çözümler sunuyoruz.
+              {t('brand_desc')}
             </p>
-            <div className="flex gap-4 pt-2">
-              <SocialIcon icon={Facebook} />
-              <SocialIcon icon={Instagram} />
-              <SocialIcon icon={Twitter} />
-              <SocialIcon icon={Linkedin} />
-            </div>
+
           </div>
 
           {/* 2. SÜTUN: HIZLI LİNKLER */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-6">Hızlı Erişim</h4>
+            <h4 className="text-white font-bold text-lg mb-6">{t('quick_links')}</h4>
             <ul className="space-y-3">
-              <FooterLink href={`/${currentLang}`} label="Ana Sayfa" />
+              <FooterLink href={`/${locale}`} label={t('home')} />
 
               {/* Hakkımızda ve Projeler kaldırıldı */}
 
-              <FooterLink href={`/${currentLang}#services`} label="Hizmetlerimiz" />
-              <FooterLink href={`/${currentLang}#contact`} label="İletişim" />
+              <FooterLink href={`/${locale}#services`} label={t('services')} />
+              <FooterLink href={`/${locale}/contact`} label={t('contact')} />
             </ul>
           </div>
 
           {/* 3. SÜTUN: HİZMETLER */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-6">Hizmetlerimiz</h4>
+            <h4 className="text-white font-bold text-lg mb-6">{t('services')}</h4>
             <ul className="space-y-3">
-              <FooterLink href={`/${currentLang}?category=montaj#services`} label="Mobilya Montajı" />
-              <FooterLink href={`/${currentLang}?category=elektrik#services`} label="Elektrik Tesisatı" />
-              <FooterLink href={`/${currentLang}?category=tamirat#services`} label="Su Tesisatı" />
-              <FooterLink href={`/${currentLang}?category=boya#services`} label="Boya & Badana" />
-              <FooterLink href={`/${currentLang}?category=temizlik#services`} label="Profesyonel Temizlik" />
+              <FooterLink href={`/${locale}?category=montaj#services`} label={tServices('mobilya_montaji')} />
+              <FooterLink href={`/${locale}?category=elektrik#services`} label={tServices('priz_anahtar')} /> {/* Using specific item representing the category */}
+              <FooterLink href={`/${locale}?category=tamirat#services`} label={tServices('musluk_tamiri')} />
+              <FooterLink href={`/${locale}?category=boya#services`} label={tServices('oda_boyama')} />
+              <FooterLink href={`/${locale}?category=temizlik#services`} label={tServices('ev_temizligi')} />
             </ul>
           </div>
 
           {/* 4. SÜTUN: İLETİŞİM */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-6">İletişim</h4>
+            <h4 className="text-white font-bold text-lg mb-6">{t('contact')}</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
-                <span className="text-sm">Maslak 1453 caddesi, taşyoncası sokak Sarıyer/İstanbul</span>
+                <span className="text-sm">{t('address')}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-amber-500 shrink-0" />
@@ -94,10 +85,10 @@ export default function Footer() {
 
         {/* ALT KISIM - TELİF HAKKI */}
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>&copy; {currentYear} Mr. Fix İstanbul. Tüm hakları saklıdır.</p>
+          <p>&copy; {currentYear} Mr. Fix İstanbul. {t('all_rights_reserved')}</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-amber-500 transition">Gizlilik Politikası</Link>
-            <Link href="#" className="hover:text-amber-500 transition">Kullanım Şartları</Link>
+            <Link href={`/${locale}/privacy`} className="hover:text-amber-500 transition">{t('privacy_policy')}</Link>
+            <Link href={`/${locale}/terms`} className="hover:text-amber-500 transition">{t('terms_of_use')}</Link>
           </div>
         </div>
 
@@ -107,14 +98,6 @@ export default function Footer() {
 }
 
 // YARDIMCI BİLEŞENLER
-function SocialIcon({ icon: Icon }: { icon: any }) {
-  return (
-    <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-white transition duration-300">
-      <Icon className="w-5 h-5" />
-    </a>
-  );
-}
-
 function FooterLink({ href, label }: { href: string; label: string }) {
   return (
     <li>

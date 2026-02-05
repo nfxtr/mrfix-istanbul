@@ -15,6 +15,18 @@
     "support": "Destek",
     "online": "Çevrimiçi"
   },
+  "Navbar": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "contact": "İletişim",
+    "call_now": "Hemen Ara",
+    "menu_montaj": "Mobilya Montajı",
+    "menu_tamirat": "Tamirat İşleri",
+    "menu_elektrik": "Elektrik & Aydınlatma",
+    "menu_boya": "Boya & Badana",
+    "menu_temizlik": "Temizlik Hizmetleri",
+    "menu_nakliye": "Nakliye & Taşıma"
+  },
   "Hero": {
     "title_start": "Eviniz İçin",
     "typewriter": {
@@ -114,15 +126,114 @@
     },
     "btn_send": "Mesajı Gönder",
     "success_title": "Mesajınız Alındı!",
-    "success_title": "Mesajınız Alındı!",
-    "success_desc": "Bizimle iletişime geçtiğiniz için teşekkürler. Ekibimiz en kısa sürede size geri dönüş yapacaktır.",
+    "success_desc": "Bizimle iletişime geçtiğiniz için teşekkürler. Ekibimiz en kısa sürede size ulaşacaktır.",
     "error_message": "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin veya WhatsApp üzerinden ulaşın.",
+    "checkbox_consent": "<link>Gizlilik Politikasını</link> okudum ve kabul ediyorum.",
+    "checkbox_required_error": "Lütfen devam etmek için Gizlilik Politikasını onaylayın.",
     "contact_info": {
       "phone": "Telefon",
       "whatsapp": "WhatsApp Destek",
       "address": "Adres",
       "working_hours": "Çalışma Saatleri",
-      "working_hours_val": "Hafta içi: 09:00 - 19:00"
+      "working_hours_val": "09.00 - 00.00",
+      "call_now": "Hemen Ara",
+      "chat_whatsapp": "WhatsApp'tan Yaz"
     }
+  },
+  "Services": {
+    "montaj": {
+      "title": "Profesyonel Mobilya Montajı",
+      "meta_title": "İstanbul Mobilya Montaj Hizmeti | IKEA, Koçtaş, Vivense Kurulum",
+      "meta_desc": "Gardırop, baza, kitaplık montajı için uzman usta. IKEA, Koçtaş ve tüm markaların kurulumu yapılır. Hızlı ve temiz işçilik.",
+      "description": "Yeni aldığınız mobilyaların kurulumu gözünüzü mü korkutuyor? Veya taşınma sonrası mobilyalarınızın tekrar monte edilmesi mi gerekiyor?\n\nMr. Fix olarak, IKEA, Koçtaş, Vivense, Kelebek gibi tüm markaların ürünlerine hakimiz. Yanlış montaj mobilyanızın ömrünü kısaltır ve güvenliğinizi tehlikeye atar. Uzman ekibimizle, mobilyalarınızı kılavuzuna uygun, terazisinde ve sağlam bir şekilde kuruyoruz.\n\nSadece kurulum değil, duvara sabitleme, kapak ayarları ve çocuk güvenliği önlemlerini de standart olarak uyguluyoruz.",
+      "f1": "Tüm Markalarla Uyumlu",
+      "f2": "Duvara Sabitleme İmkanı",
+      "f3": "Hızlı ve Temiz Kurulum",
+      "f4": "Kapak ve Ray Ayarları"
+    },
+    "tamirat": {
+      "title": "Ev İçi Tamirat & Tesisat",
+      "meta_title": "İstanbul Su Tesisatçısı ve Tamirat Ustası",
+      "meta_desc": "Musluk tamiri, sifon değişimi, korniş montajı ve genel ev tamirat işleri. Maslak ve çevresinde acil usta.",
+      "description": "Evdeki ufak arızalar zamanla büyüyüp can sıkıcı hale gelebilir. Damlayan musluklar, çalışmayan sifonlar veya kopan kapı kolları...\n\nEvinizdeki her türlü 'Usta gerektiren' iş için yanınızdayız. Korniş montajından musluk değişimine, kapı kilidi onarımından pencere ayarlarına kadar geniş bir yelpazede hizmet veriyoruz. Kırıp dökmeden, nokta atışı tespit ve onarım yapıyoruz.",
+      "f1": "Kırmadan Tespit & Onarım",
+      "f2": "Korniş & Avize Montajı",
+      "f3": "Acil Tesisat Müdahalesi",
+      "f4": "Garantili Malzeme"
+    },
+    "elektrik": {
+      "title": "Elektrik ve Aydınlatma Hizmetleri",
+      "meta_title": "İstanbul Elektrikçi | Avize Montajı ve Arıza",
+      "meta_desc": "Sigorta arızası, avize montajı, priz değişimi ve led aydınlatma işleri. Sertifikalı elektrik ustası.",
+      "description": "Elektrik işleri şakaya gelmez. Evinizdeki en ufak bir kıvılcım veya yanık kokusu ciddi risklerin habercisi olabilir.\n\nSertifikalı elektrik ustalarımızla, avize montajından priz yeri değişimine, sigorta panosu arızalarından şerit LED uygulamalarına kadar güvenli hizmet sunuyoruz. Estetik kablolama ve doğru aydınlatma çözümleri ile evinize değer katıyoruz.",
+      "f1": "Sertifikalı Uzmanlar",
+      "f2": "Avize & LED Montajı",
+      "f3": "Sigorta & Kaçak Kontrolü",
+      "f4": "7/24 Acil Destek"
+    },
+    "boya": {
+      "title": "Boya, Badana ve Duvar Kağıdı",
+      "meta_title": "İstanbul Boyacı Ustası | Temiz ve Hızlı Boya Badana",
+      "meta_desc": "Evinizi yenileyin! Dyo, Filli Boya, Jotun seçenekleri. Eşyalı evlerde maskeleme yaparak temiz boya hizmeti.",
+      "description": "Evinizin havasını değiştirmenin en etkili yolu profesyonel bir boya badana işlemidir. Ancak boya yapmak sadece fırça sürmek değildir.\n\nEşyalarınızı koruma altına alarak (maskeleme), duvarlardaki çatlak ve delikleri onararak (alçı tamiri) işe başlıyoruz. Kaliteli boyalar (Jotun, Dyo, Filli Boya) kullanarak, iz bırakmadan pürüzsüz bir yüzey elde ediyoruz. İş bittiğinde evinizi temizleyip teslim ediyoruz.",
+      "f1": "Tam Koruma & Maskeleme",
+      "f2": "Alçı & Çatlak Tamiri",
+      "f3": "Kaliteli Boya Seçenekleri",
+      "f4": "Anahtar Teslim Temizlik"
+    },
+    "temizlik": {
+      "title": "Profesyonel Temizlik Hizmetleri",
+      "meta_title": "İstanbul Ev ve Ofis Temizliği | İnşaat Sonrası Temizlik",
+      "meta_desc": "Detaylı ev temizliği, ofis temizliği ve inşaat sonrası temizlik. Güvenilir personel, profesyonel ekipman.",
+      "description": "Klasik gündelikçi temizliğinden fazlasını sunuyoruz. Tadilat sonrası zorlu temizlik, taşınma öncesi köşe bucak temizlik veya düzenli ofis temizliği için profesyonel ekipmanlar kullanıyoruz.\n\nBuharlı temizlik makineleri, endüstriyel vakumlar ve yüzeye özel deterjanlarla evinizi hijyenik bir yaşam alanına dönüştürüyoruz.",
+      "f1": "İnşaat Sonrası Uzmanlık",
+      "f2": "Buharlı Dezenfekte",
+      "f3": "Güvenilir Personel",
+      "f4": "Koltuk Yıkama Hizmeti"
+    }
+  },
+  "ServiceDetail": {
+    "service_category": "Profesyonel Hizmet",
+    "get_quote": "Hemen Fiyat Al",
+    "guaranteed_service": "%100 Memnuniyet Garantisi",
+    "about_service": "Hizmet Hakkında",
+    "why_choose_us": "Neden Mr. Fix?",
+    "feature_confirmed": "Onaylanmış Hizmet",
+    "ready_to_start": "Başlamaya Hazır mısınız?",
+    "cta_desc": "Hemen randevunuzu oluşturun, uzman ekibimiz en kısa sürede kapınızda olsun.",
+    "starting_price": "Hizmet Bedeli",
+    "ask_for_quote": "Teklif İste",
+    "service_time": "Servis Süresi",
+    "quick_service": "Aynı Gün / Randevulu",
+    "warranty": "Garanti",
+    "guaranteed": "İşçilik Garantisi",
+    "location": "Bölge"
+  },
+  "CookieBanner": {
+    "message": "Size daha iyi hizmet sunabilmek için sitemizde çerezler kullanılmaktadır.",
+    "accept": "Kabul Et",
+    "decline": "Reddet",
+    "privacy_link": "Gizlilik Politikası"
+  },
+  "PrivacyPolicy": {
+    "title": "Gizlilik Politikası",
+    "last_updated": "Son Güncelleme: 03.02.2025",
+    "content": "<h3><strong>Genel Bilgilendirme</strong></h3><p>Bu siteyi ziyaret ettiğinizde, temel gizlilik prensiplerimizi kabul etmiş sayılırsınız. Amacımız, size en iyi hizmeti sunarken kişisel verilerinizi de güvende tutmaktır.</p><br><br><h3><strong>Hangi Bilgileri Topluyoruz?</strong></h3><p>Siz bizimle (iletişim formu veya WhatsApp üzerinden) paylaşmadığınız sürece, isminiz, adresiniz veya telefon numaranız gibi kişisel bilgileri <b>toplamıyoruz</b>. Bize ilettiğiniz bilgileri ise sadece taleplerinizi gerçekleştirmek ve size yardımcı olmak için istiyoruz.</p><br><br><h3><strong>Bilgilerinizi Nasıl Kullanıyoruz?</strong></h3><p>Paylaştığınız iletişim bilgilerini sadece randevunuzu oluşturmak, tamirat/montaj işlemlerini gerçekleştirmek ve gerektiğinde sizinle haberleşmek için kullanıyoruz. Bilgilerinizi izniniz olmadan üçüncü şahıslarla veya reklam firmalarıyla <b>asla paylaşmıyoruz</b>.</p><br><br><h3><strong>Çerezler (Cookies)</strong></h3><p>Sitemizin düzgün çalışması ve size daha iyi bir deneyim sunabilmesi için standart çerez teknolojisini kullanıyoruz. Bu veriler kimliğinizi ortaya çıkarmaz, sadece sitemizi nasıl kullandığınızı (hangi sayfaların ziyaret edildiği vb.) anlamamıza yardımcı olur.</p><br><br><h3><strong>Yasal Zorunluluklar</strong></h3><p>Yasal bir zorunluluk olmadığı sürece bilgileriniz bizimle güvendedir. Ancak resmi makamlarca veya mahkeme kararıyla talep edilmesi durumunda, kanunlara uymakla yükümlüyüz.</p><br><br><h3><strong>Bize Ulaşın</strong></h3><p>Gizlilik politikamızla veya verilerinizle ilgili aklınıza takılan her türlü soru için bize <b>info@mrfixistanbul.com</b> adresinden ulaşabilirsiniz.</p>"
+  },
+  "TermsOfUse": {
+    "title": "Kullanım Şartları",
+    "last_updated": "Son Güncelleme: 03.02.2025",
+    "content": "<h3><strong>Anlaşma</strong></h3><p>Mr. Fix alan adı altındaki bu web sitesinin kullanımı burada açıklanan şartlara tabidir. Kullanıcı bu web sitesini ziyaret ettiğinde, bu şartları kabul etmiş sayılır.</p><br><br><h3><strong>Site İçeriği</strong></h3><p>Mr. Fix web sitesinde sunulan tüm içerik, yalnızca tamirat ve montaj hizmetlerimiz hakkında bilgi verme amaçlıdır. Sitedeki bilgiler, yerinde keşif yapılmadan nihai bir fiyat teklifi veya teknik tavsiye olarak değerlendirilmemelidir. Doğrudan görüşme sağlanmadan, sitedeki bilgilere dayanarak yapılan işlemlerden doğabilecek yanlış anlaşılmalardan Mr. Fix sorumlu değildir.</p><br><br><h3><strong>Telif Hakkı ve Fikri Mülkiyet</strong></h3><p>Mr. Fix tarafından sağlanan tüm içerik (görseller, metinler, logolar) telif hakkı yasalarıyla korunmaktadır. Bu web sitesindeki materyaller, Mr. Fix'in önceden yazılı izni olmaksızın kopyalanamaz, çoğaltılamaz veya yeniden dağıtılamaz.</p><br><br><h3><strong>Kullanım Sınırlamaları</strong></h3><p>Kullanıcı, Mr. Fix web sitesinden veri çekmek için otomatik komut dosyaları veya programlar kullanamaz. Sayfalar ve içerik ticari amaçla çoğaltılamaz.</p><br><br><h3><strong>Sorumluluk Reddi</strong></h3><p>Mr. Fix, bu web sitesinin kullanımından kaynaklanan herhangi bir zarardan sorumlu tutulamaz. Bu madde, fiilen sunulan ve hizmet garantimiz kapsamında olan tamirat/montaj hizmetleri için geçerli değildir; bu hizmetler ayrıca garanti altındadır.</p><br><br><h3><strong>İletişim Bilgileri</strong></h3><p>Mr. Fix İstanbul<br>Maslak 1453, Sarıyer/İstanbul<br>Tel: +90 533 196 30 61<br>E-posta: info@mrfixistanbul.com</p>"
+  },
+  "Footer": {
+    "brand_desc": "İstanbul genelinde profesyonel tamirat, montaj ve bakım hizmetleri. Evinizdeki her sorun için güvenilir ve hızlı çözümler sunuyoruz.",
+    "quick_links": "Hızlı Erişim",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim",
+    "home": "Ana Sayfa",
+    "all_rights_reserved": "Tüm hakları saklıdır.",
+    "privacy_policy": "Gizlilik Politikası",
+    "terms_of_use": "Kullanım Şartları",
+    "address": "Maslak 1453 caddesi, taşyoncası sokak Sarıyer/İstanbul"
   }
 }

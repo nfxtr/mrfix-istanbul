@@ -7,6 +7,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd"; // Schema eklendi
 import GoogleAnalytics from "@/components/GoogleAnalytics"; // Analytics eklendi
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import CookieBanner from "@/components/CookieBanner";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -43,6 +45,8 @@ export default async function LocaleLayout({
           </main>
 
           <Footer />
+          <FloatingWhatsApp />
+          <CookieBanner />
           <JsonLd />
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
         </NextIntlClientProvider>

@@ -3,7 +3,8 @@ import { Resend } from 'resend';
 
 // Resend istemcisini başlat
 // API Key yoksa hata vermesin diye boş string fallback'i koyuyoruz ama çalışmaz.
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Resend istemcisini POST fonksiyonu içinde başlatacağız
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
     try {
@@ -26,6 +27,8 @@ export async function POST(req: Request) {
                 { status: 500 }
             );
         }
+
+        const resend = new Resend(process.env.RESEND_API_KEY);
 
         // E-posta gönderimi
         // Not: Free tier'da sadece 'onboarding@resend.dev' adresinden kendi onaylı mailinize atabilirsiniz.

@@ -15,6 +15,18 @@
     "support": "Support",
     "online": "Online"
   },
+  "Navbar": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "call_now": "Call Now",
+    "menu_montaj": "Furniture Assembly",
+    "menu_tamirat": "Repair Works",
+    "menu_elektrik": "Electric & Lighting",
+    "menu_boya": "Painting & Plastering",
+    "menu_temizlik": "Cleaning Services",
+    "menu_nakliye": "Transportation & Moving"
+  },
   "Hero": {
     "title_start": "For Your Home",
     "typewriter": {
@@ -101,5 +113,129 @@
     "not_found_desc": "Even if it's not on our list, our team can help.",
     "whatsapp_help": "Ask on WhatsApp",
     "category_go": "Go to category"
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "subtitle": "Contact us for your questions, requests or appointment.",
+    "info_title": "Contact Information",
+    "form_title": "Write to Us",
+    "form_desc": "You can reach us by filling out the form below. We will get back to you as soon as possible.",
+    "labels": {
+      "name_placeholder": "Your Name",
+      "phone_placeholder": "Your Phone Number",
+      "subject_placeholder": "Subject",
+      "message_placeholder": "Your Message..."
+    },
+    "btn_send": "Send Message",
+    "success_title": "Message Received!",
+    "success_desc": "Thank you for contacting us. Our team will get back to you as soon as possible.",
+    "error_message": "Message could not be sent. Please try again later or contact via WhatsApp.",
+    "checkbox_consent": "I have read and agree to the <link>Privacy Policy</link>.",
+    "checkbox_required_error": "Please accept the Privacy Policy to proceed.",
+    "contact_info": {
+      "phone": "Phone",
+      "whatsapp": "WhatsApp Support",
+      "address": "Address",
+      "working_hours": "Working Hours",
+      "working_hours_val": "09:00 AM - 12:00 AM",
+      "call_now": "Call Now",
+      "chat_whatsapp": "Chat on WhatsApp"
+    }
+  },
+  "Services": {
+    "montaj": {
+      "title": "Professional Furniture Assembly",
+      "meta_title": "Furniture Assembly Service Istanbul | IKEA, Wayfair Installation",
+      "meta_desc": "Expert assembly for wardrobes, beds, bookshelves. IKEA, Koçtaş and all brands. Fast and clean workmanship.",
+      "description": "Does assembling new furniture intimidate you? Or do you need your furniture reassembled after moving?\n\nAt Mr. Fix, we are experts in products from all brands like IKEA, Wayfair, Vivense, and more. Incorrect assembly shortens the life of your furniture and risks your safety. With our expert team, we assemble your furniture according to the manual, leveled, and sturdy.\n\nWe don't just assemble; wall anchoring, door alignment, and child safety measures are applied as standard.",
+      "f1": "Compatible with All Brands",
+      "f2": "Wall Anchoring Available",
+      "f3": "Fast & Clean Installation",
+      "f4": "Door & Rail Adjustment"
+    },
+    "tamirat": {
+      "title": "Home Repair & Plumbing",
+      "meta_title": "Handyman & Plumber Istanbul | Repair Services",
+      "meta_desc": "Faucet repair, flush tank replacement, curtain rod installation, and general home repairs. Urgeny handyman in Maslak.",
+      "description": "Small faults in the home can grow over time and become annoying. Dripping faucets, malfunctioning flush tanks, or broken door handles...\n\nWe are by your side for every 'Handyman needed' job in your home. We offer a wide range of services from curtain rod installation to faucet replacement, door lock repair to window adjustments. We detect and repair instantly without breaking or damaging anything.",
+      "f1": "Non-destructive Detection",
+      "f2": "Curtain & Chandelier Install",
+      "f3": "Emergency Plumbing Intervention",
+      "f4": "Guaranteed Materials"
+    },
+    "elektrik": {
+      "title": "Electrical & Lighting Services",
+      "meta_title": "Electrician Istanbul | Chandelier Installation & Faults",
+      "meta_desc": "Fuse failure, chandelier installation, socket replacement, and LED lighting works. Certified electrician.",
+      "description": "Electrical work is no joke. The slightest spark or smell of burning in your home can be a sign of serious risks.\n\nWith our certified electricians, we offer safe services ranging from chandelier installation to changing socket locations, fuse panel malfunctions to LED strip applications. We add value to your home with aesthetic cabling and correct lighting solutions.",
+      "f1": "Certified Experts",
+      "f2": "Chandelier & LED Installation",
+      "f3": "Safety & Leakage Check",
+      "f4": "24/7 Emergency Support"
+    },
+    "boya": {
+      "title": "Painting & Wallpaper",
+      "meta_title": "Painter Istanbul | Clean and Fast House Painting",
+      "meta_desc": "Renew your home! Premium paint options. Clean painting service with full masking.",
+      "description": "The most effective way to change the atmosphere of your home is a professional paint job. But painting isn't just about brushing.\n\nWe start by protecting your belongings (masking) and repairing cracks/holes in the walls (plaster repair). Using high-quality paints, we achieve a smooth surface without leaving marks. When the job is done, we clean your house and hand it over.",
+      "f1": "Full Protection & Masking",
+      "f2": "Plaster & Crack Repair",
+      "f3": "Premium Paint Options",
+      "f4": "Turnkey Cleanup"
+    },
+    "temizlik": {
+      "title": "Professional Cleaning Services",
+      "meta_title": "Home & Office Cleaning Istanbul | Post-Construction",
+      "meta_desc": "Detailed home cleaning, office cleaning, and post-construction cleaning. Reliable staff, professional equipment.",
+      "description": "We offer more than classic daily cleaning. We use professional equipment for tough post-renovation cleaning, pre-move deep cleaning, or regular office cleaning.\n\nWe transform your home into a hygienic living space with steam cleaning machines, industrial vacuums, and surface-specific detergents.",
+      "f1": "Post-Construction Expert",
+      "f2": "Steam Disinfection",
+      "f3": "Reliable Staff",
+      "f4": "Sofa Washing Service"
+    }
+  },
+  "ServiceDetail": {
+    "service_category": "Professional Service",
+    "get_quote": "Get a Quote",
+    "guaranteed_service": "100% Satisfaction Guarantee",
+    "about_service": "About the Service",
+    "why_choose_us": "Why Choose Mr. Fix?",
+    "feature_confirmed": "Verified Service",
+    "ready_to_start": "Ready to Get Started?",
+    "cta_desc": "Book your appointment now, and our expert team will be at your door shortly.",
+    "starting_price": "Service Fee",
+    "ask_for_quote": "Get Quote",
+    "service_time": "Service Time",
+    "quick_service": "Same Day / Appointment",
+    "warranty": "Warranty",
+    "guaranteed": "Workmanship Warranty",
+    "location": "Region"
+  },
+  "CookieBanner": {
+    "message": "We use cookies to provide you with a better service.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "privacy_link": "Privacy Policy"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last Updated: 02/03/2025",
+    "content": "<h3>Agreement</h3><p>The use of this website and all other websites under Mr. Fix domain is subject to the terms and conditions explained here. When the user visits this website, they agree to be bound by these terms and conditions, which constitute a binding agreement between the user and Mr. Fix.</p><h3>User Information</h3><p>Mr. Fix never collects any type of personally identifiable information about the user such as name, address, phone number unless they choose to provide it via contact forms or service requests. E-mails, name, surname and address information are only asked if the user requests a service or contacts us, and this information is only used for customer services purposes and Mr. Fix doesn’t share any user information with any other entity. However, when the user visits Mr. Fix’s websites, our computers may automatically collect statistics about the user’s visit. Mr. Fix may monitor statistics such as how many users visit the website, the users’ IP addresses, and which browsers are used. Mr. Fix only uses aggregated statistics of this visitor information to help improve the performance of the website.</p><h3>Information Use</h3><p>Mr. Fix uses the information collected primarily to process the task for which the user visited the website (e.g., repair or assembly services). Mr. Fix takes all reasonable precautions to prevent unauthorized access to this information.</p><h3>Data Collection & Cookies</h3><p>A 'cookie' is a piece of information that the website sends to the user’s browser. A user can use Mr. Fix’s website without cookies. Mr. Fix uses cookies to enhance the user experience. Mr. Fix cannot use these cookies to personally identify the user in any way.</p><h3>Disclosure by Law</h3><p>If Mr. Fix is required by law to disclose certain information to local, national or international law enforcement authorities, it will do so.</p><h3>Contacting Mr. Fix</h3><p>If you have any questions about Mr. Fix’s Privacy Policy, please email info@mrfixistanbul.com.</p>"
+  },
+  "TermsOfUse": {
+    "title": "Terms of Use",
+    "last_updated": "02/03/2025",
+    "content": "<h3><strong>Agreement</strong></h3><p>The use of this website and all other platforms under the Mr. Fix domain is subject to the terms and conditions explained here. When the user visits this website, they agree to be bound by these terms and conditions.</p><br><br><h3><strong>Website Content</strong></h3><p>All content available on the Mr. Fix website shall only be used for informational purposes regarding our repair and assembly services. The content should not be considered as a final price offer or technical advice without an on-site inspection. Mr. Fix is not responsible for misunderstandings arising from the information on the website without direct consultation.</p><br><br><h3><strong>Copyright & Intellectual Property</strong></h3><p>All content provided by Mr. Fix (images, text, logos) is protected by copyright laws. The content is owned by Mr. Fix. Material contained in this website may not be copied, reproduced, or redistributed without prior written consent.</p><br><br><h3><strong>Usage Limitations</strong></h3><p>The user may not use automated scripts or programs to extract data from the Mr. Fix website. You must not reproduce or exploit the pages and content for commercial gain.</p><br><br><h3><strong>Limitation of Liability</strong></h3><p>Under no circumstances shall Mr. Fix be liable for any damages arising out of or in connection with the use of this website. This does not apply to the liability for services actually rendered, which are covered under our service warranty.</p><br><br><h3><strong>Contact Information</strong></h3><p>Mr. Fix Istanbul<br>Maslak 1453, Cariyer/Istanbul<br>Phone: +90 533 196 30 61<br>Email: info@mrfixistanbul.com</p>"
+  },
+  "Footer": {
+    "brand_desc": "Professional repair, assembly, and maintenance services across Istanbul. We offer reliable and fast solutions for every problem in your home.",
+    "quick_links": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "home": "Home",
+    "all_rights_reserved": "All rights reserved.",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_use": "Terms of Use",
+    "address": "Maslak 1453 Street, Tasyoncasi Street Sariyer/Istanbul"
   }
 }
