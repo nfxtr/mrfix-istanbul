@@ -482,7 +482,7 @@ export default function HomeClient() {
                                                     e.stopPropagation();
                                                     window.open(createWhatsAppLink(tServ(item.id)), '_blank');
                                                 }}
-                                                className="w-full py-2.5 lg:py-3 rounded-xl border border-transparent font-bold text-white flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] transition-all duration-300 text-sm lg:text-base cursor-pointer active:scale-95 shadow-md hover:shadow-lg"
+                                                className="w-full py-2.5 lg:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 flex items-center justify-center gap-2 bg-white hover:bg-[#25D366] hover:text-white hover:border-transparent transition-all duration-300 text-sm lg:text-base cursor-pointer active:scale-95 shadow-sm hover:shadow-md"
                                             >
                                                 <MessageCircle className="w-4 h-4" />
                                                 <span>{tCards('whatsapp_btn')}</span>
