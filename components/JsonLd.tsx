@@ -5,9 +5,9 @@ export default function JsonLd() {
         "@context": "https://schema.org",
         "@type": "HomeAndConstructionBusiness",
         "name": "Mr. Fix İstanbul | Tadilat & Montaj",
-        "image": "https://www.mrfix-istanbul.com/logo.png",
-        "@id": "https://www.mrfix-istanbul.com",
-        "url": "https://www.mrfix-istanbul.com",
+        "image": "https://mrfixistanbul.com/logo.png",
+        "@id": "https://mrfixistanbul.com",
+        "url": "https://mrfixistanbul.com",
         "telephone": "+905331963061",
         "priceRange": "$$",
         "address": {
@@ -34,8 +34,8 @@ export default function JsonLd() {
                 "Saturday",
                 "Sunday"
             ],
-            "opens": "00:00",
-            "closes": "23:59"
+            "opens": "09:00",
+            "closes": "00:00"
         },
         "sameAs": [
             "https://instagram.com/mrfixistanbul",

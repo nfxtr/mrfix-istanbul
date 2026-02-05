@@ -18,8 +18,25 @@ export default function FAQClient() {
         { id: 6, q: t('q6'), a: t('a6') },
     ];
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+            }
+        }))
+    };
+
     return (
         <main className="min-h-screen bg-slate-50 pt-32 pb-20 px-6">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-16">
                     <motion.div
