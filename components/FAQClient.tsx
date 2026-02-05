@@ -1,12 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus, HelpCircle } from 'lucide-react';
 
 export default function FAQClient() {
     const t = useTranslations('FAQ');
+    const locale = useLocale();
     const [openId, setOpenId] = useState<number | null>(1); // Default first one open
 
     const faqs = [
@@ -111,20 +112,20 @@ export default function FAQClient() {
                     className="mt-16 p-8 rounded-3xl bg-[#0D1C2E] text-white text-center relative overflow-hidden"
                 >
                     <div className="relative z-10">
-                        <h3 className="text-2xl font-bold mb-4">Aradığınız cevabı bulamadınız mı?</h3>
-                        <p className="text-slate-400 mb-8 max-w-md mx-auto">Hemen uzman ekibimizle iletişime geçin, her türlü sorunuzu yanıtlayalım.</p>
+                        <h3 className="text-2xl font-bold mb-4">{t('cta_title')}</h3>
+                        <p className="text-slate-400 mb-8 max-w-md mx-auto">{t('cta_desc')}</p>
                         <div className="flex flex-wrap items-center justify-center gap-4">
                             <a
                                 href="https://wa.me/905331963061"
                                 className="px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl transition-all shadow-lg active:scale-95"
                             >
-                                WhatsApp'tan Sorun
+                                {t('cta_whatsapp')}
                             </a>
                             <a
-                                href="/tr/contact"
+                                href={`/${locale}/contact`}
                                 className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl transition-all border border-white/10 backdrop-blur-sm"
                             >
-                                İletişim Formu
+                                {t('cta_form')}
                             </a>
                         </div>
                     </div>

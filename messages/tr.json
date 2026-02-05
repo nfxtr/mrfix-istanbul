@@ -100,8 +100,8 @@
     "title": "Hizmet Standartlarımız",
     "f1_title": "Güvenilir Ekip",
     "f1_desc": "Tüm ustalarımız güvenlik kontrolünden geçmiş sertifikalı profesyonellerdir.",
-    "f2_title": "Çok Dilli Destek",
-    "f2_desc": "Türkçe, İngilizce ve Arapça dillerinde sorunsuz iletişim.",
+    "f2_title": "İngilizce Destek",
+    "f2_desc": "Yabancı müşterilerimiz için akıcı İngilizce iletişim desteği.",
     "f3_title": "Sabit Fiyat",
     "f3_desc": "Sürpriz maliyet yok. İş öncesi net fiyat teklifi.",
     "f4_title": "Garantili İşçilik",
@@ -138,7 +138,14 @@
       "working_hours": "Çalışma Saatleri",
       "working_hours_val": "09.00 - 00.00",
       "call_now": "Hemen Ara",
-      "chat_whatsapp": "WhatsApp'tan Yaz"
+      "chat_whatsapp": "WhatsApp'tan Yaz",
+      "new_message": "Yeni Mesaj Gönder"
+    },
+    "placeholders": {
+      "name": "Örn: Ahmet Yılmaz",
+      "phone": "Örn: 0555 123 45 67",
+      "subject": "Örn: Mobilya Montajı Hakkında",
+      "message": "..."
     }
   },
   "Services": {
@@ -241,9 +248,9 @@
     "title": "Sıkça Sorulan Sorular",
     "subtitle": "Hizmetlerimiz hakkında merak edilen temel soruların yanıtlarını burada bulabilirsiniz.",
     "q1": "Hangi bölgelere hizmet veriyorsunuz?",
-    "a1": "Başta Maslak 1453, Sarıyer, Beşiktaş, Eyüp ve Kağıthane olmak üzere İstanbul’un tüm bölgelerine usta desteği sağlıyoruz.",
+    "a1": "Başta Maslak 1453, Sarıyer, Beşiktaş, Eyüp ve Kağıthane olmak üzere İstanbul’un çoğu bölgesine usta desteği sağlıyoruz.",
     "q2": "Fiyatlandırma nasıl yapılıyor?",
-    "a2": "Yapılacak işin niteliğine göre ön görüşmede yaklaşık bir fiyat paylaşılır. Kesin fiyatlandırma yerinde inceleme sonrası netleşir. Sürpriz maliyet çıkmaz.",
+    "a2": "Yapılacak işin niteliğine göre ön görüşmede yaklaşık bir fiyat paylaşılır. Kesin fiyatlandırma yerinde inceleme sonrası netleşir. Adrese gelindiği halde teknik nedenlerle işlem uygulanamazsa dahi minimum servis ücreti uygulanmaktadır.",
     "q3": "Yaptığınız işlere garanti veriyor musunuz?",
     "a3": "Evet, yaptığımız tüm montaj ve tamirat işçiliği Mr. Fix garantisi altındadır. İşlem sonrası oluşabilecek teknik sorunlarda yanınızdayız.",
     "q4": "Aynı gün içinde usta çağırabilir miyim?",
@@ -251,6 +258,10 @@
     "q5": "Malzeme teminini usta mı yapıyor?",
     "a5": "Parça veya malzeme gerektiren işlerde dilerseniz siz alabilirsiniz, dilerseniz usta onayınızla kaliteli parça temin edip faturayı yansıtır.",
     "q6": "Yabancı müşteriler için dil desteği var mı?",
-    "a6": "Evet, ekibimiz İngilizce ve Arapça dillerinde akıcı iletişim kurabilmektedir. Yabancı müşterilerimiz için kusursuz hizmet sunuyoruz."
+    "a6": "Evet, ekibimiz İngilizce dilinde akıcı iletişim kurabilmektedir. Yabancı müşterilerimiz için profesyonel iletişim desteği sunuyoruz.",
+    "cta_title": "Aradığınız cevabı bulamadınız mı?",
+    "cta_desc": "Hemen uzman ekibimizle iletişime geçin, her türlü sorunuzu yanıtlayalım.",
+    "cta_whatsapp": "WhatsApp'tan Sorun",
+    "cta_form": "İletişim Formu"
   }
 }

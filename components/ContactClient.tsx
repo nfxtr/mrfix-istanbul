@@ -192,7 +192,7 @@ export default function ContactClient() {
                                         onClick={() => setFormStatus('idle')}
                                         className="mt-8 px-6 py-2.5 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition"
                                     >
-                                        Yeni Mesaj Gönder
+                                        {t('contact_info.new_message')}
                                     </button>
                                 </div>
                             ) : (
@@ -211,7 +211,7 @@ export default function ContactClient() {
                                                     name="name"
                                                     required
                                                     className="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition-all font-medium text-slate-800 placeholder:text-slate-400"
-                                                    placeholder="Örn: Ahmet Yılmaz"
+                                                    placeholder={t('placeholders.name')}
                                                 />
                                             </div>
                                             <div className="space-y-2">
@@ -221,7 +221,7 @@ export default function ContactClient() {
                                                     name="phone"
                                                     required
                                                     className="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition-all font-medium text-slate-800 placeholder:text-slate-400"
-                                                    placeholder="Örn: 0555 123 45 67"
+                                                    placeholder={t('placeholders.phone')}
                                                 />
                                             </div>
                                         </div>
@@ -233,7 +233,7 @@ export default function ContactClient() {
                                                 name="subject"
                                                 required
                                                 className="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition-all font-medium text-slate-800 placeholder:text-slate-400"
-                                                placeholder="Örn: Mobilya Montajı Hakkında"
+                                                placeholder={t('placeholders.subject')}
                                             />
                                         </div>
 
@@ -244,7 +244,7 @@ export default function ContactClient() {
                                                 required
                                                 rows={5}
                                                 className="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/10 outline-none transition-all font-medium text-slate-800 placeholder:text-slate-400 resize-none"
-                                                placeholder="..."
+                                                placeholder={t('placeholders.message')}
                                             ></textarea>
                                         </div>
 
