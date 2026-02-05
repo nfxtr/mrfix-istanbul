@@ -10,7 +10,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 const poppins = Poppins({
@@ -18,9 +18,8 @@ const poppins = Poppins({
     weight: ['400', '500', '600', '700', '800'],
 });
 
-const WHATSAPP_NUMBER = "905331963061";
+import { serviceCategories, WHATSAPP_NUMBER } from '@/constants/services';
 
-// --- HERO SLIDER GÖRSELLERİ ---
 const heroImages = [
     "https://images.unsplash.com/photo-1505798577917-a65157d3320a?q=80&w=2070&auto=format&fit=crop", // Genel Usta
     "https://images.unsplash.com/photo-1623161551706-318825cd18ef?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Tamirat
@@ -44,7 +43,7 @@ export default function HomeClient() {
     const locale = useLocale();
     const isRTL = locale === 'ar';
     const searchParams = useSearchParams();
-
+    const router = useRouter();
 
     const [mounted, setMounted] = useState(false);
     const [activeTab, setActiveTab] = useState('montaj');
@@ -60,84 +59,6 @@ export default function HomeClient() {
 
     // Hero Slider State
     const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
-
-    // --- HİZMET VERİLERİ ---
-    const serviceCategories = [
-        {
-            id: 'montaj',
-            label: tCat('montaj'),
-            icon: Hammer,
-            items: [
-                { name: tServ('mobilya_montaji'), keywords: ['dolap', 'masa', 'sandalye', 'ikea', 'kurulum'], img: '/image.png' },
-                { name: tServ('tv_montaji'), keywords: ['televizyon', 'ekran', 'uydu', 'askı aparatı'], img: '/tvasma.png' },
-                { name: tServ('raf_dolap'), keywords: ['kitaplık', 'raf montajı', 'duvar rafı'], img: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600' },
-                { name: tServ('perde_kornism'), keywords: ['stor', 'jaluzi', 'korniş takma'], img: '/perde.png' },
-            ]
-        },
-        {
-            id: 'tamirat',
-            label: tCat('tamirat'),
-            icon: Wrench,
-            items: [
-                { name: tServ('musluk_tamiri'), keywords: ['su tesisatı', 'lavabo', 'akıtan musluk', 'conta'], img: 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80&w=600' },
-                { name: tServ('kapi_kilit'), keywords: ['çilingir', 'kapı kolu', 'menteşe', 'kilit değiştirme'], img: '/kapikolu.png' },
-                { name: tServ('pencere_ayari'), keywords: ['pimapen', 'cam', 'fitil', 'kapanmayan pencere'], img: '/cam.png' },
-                { name: tServ('genel_onarim'), keywords: ['ufak tamirat', 'tadilat', 'usta'], img: 'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&q=80&w=600' },
-            ]
-        },
-        {
-            id: 'elektrik',
-            label: tCat('elektrik'),
-            icon: Zap,
-            items: [
-                { name: tServ('avize_montaji'), keywords: ['lamba', 'aydınlatma', 'sarkıt'], img: 'https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&q=80&w=600' },
-                { name: tServ('priz_anahtar'), keywords: ['elektrik düğmesi', 'fiş', 'kablo'], img: '/priz.png' },
-                { name: tServ('sigorta_pano'), keywords: ['şartel', 'elektrik kesintisi', 'kaçak akım'], img: '/sigorta.png' },
-                { name: tServ('led_aydinlatma'), keywords: ['şerit led', 'spot', 'gizli ışık'], img: '/led.png' },
-            ]
-        },
-        {
-            id: 'boya',
-            label: tCat('boya'),
-            icon: Paintbrush,
-            items: [
-                { name: tServ('oda_boyama'), keywords: ['duvar boyası', 'badana', 'salon boyama'], img: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&q=80&w=600' },
-                { name: tServ('tavan_boyama'), keywords: ['banyo tavanı', 'rutubet'], img: '/tavan.png' },
-                { name: tServ('duvar_kagidi'), keywords: ['duvar kaplama', 'dekorasyon'], img: '/duvarkagidi.png' },
-                { name: tServ('alci_siva'), keywords: ['alçıpan', 'delik kapatma', 'yama'], img: '/siva.png' },
-            ]
-        },
-        {
-            id: 'temizlik',
-            label: tCat('temizlik'),
-            icon: Sparkles,
-            items: [
-                { name: tServ('ev_temizligi'), keywords: ['gündelikçi', 'detaylı temizlik', 'boş ev'], img: '/temizlik.png' },
-                { name: tServ('ofis_temizligi'), keywords: ['iş yeri', 'büro'], img: '/ofis.png' },
-                { name: tServ('koltuk_yikama'), keywords: ['kanepe', 'berjer', 'yatak yıkama'], img: '/koltuk.png' },
-                { name: tServ('insaat_sonrasi'), keywords: ['tadilat temizliği', 'inşaat artığı'], img: '/insaat.png' },
-            ]
-        },
-        {
-            id: 'nakliye',
-            label: tCat('nakliye'),
-            icon: Truck,
-            items: [
-                { name: tServ('parca_esya'), keywords: ['kamyonet', 'doblo', 'koltuk taşıma'], img: '/tasinma.png' },
-                { name: tServ('evden_eve'), keywords: ['taşınma', 'nakliyat'], img: '/araba.png' },
-                { name: tServ('esya_paketleme'), keywords: ['kolileme', 'ambalaj'], img: 'https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&fit=crop&q=80&w=600' },
-                { name: tServ('ofis_tasima'), keywords: ['iş yeri taşıma'], img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600' },
-            ]
-        },
-        {
-            id: 'diger',
-            label: tCat('diger'),
-            icon: HelpCircle,
-            items: [
-                { name: tServ('ozel_istek'), keywords: ['farklı işler', 'yardım', 'destek', 'bilinmeyen'], img: '/ozel.png' },
-            ]
-        }
-    ];
 
     // --- NASIL ÇALIŞIYORUZ VERİLERİ (GÜNCELLENDİ: Minimalist & Profesyonel) ---
     const howItWorksSteps = [
@@ -242,8 +163,9 @@ export default function HomeClient() {
         const results: any[] = [];
         serviceCategories.forEach(category => {
             category.items.forEach(item => {
-                if (item.name.toLowerCase().includes(query) || item.keywords?.some((k: string) => k.toLowerCase().includes(query))) {
-                    results.push({ ...item, categoryId: category.id });
+                const itemName = tServ(item.id).toLowerCase();
+                if (itemName.includes(query) || item.keywords?.some((k: string) => k.toLowerCase().includes(query))) {
+                    results.push({ ...item, name: tServ(item.id), categoryId: category.id });
                 }
             });
         });
@@ -473,7 +395,7 @@ export default function HomeClient() {
             </section>
 
             {/* --- HİZMETLER BÖLÜMÜ --- */}
-            <section id="services" className="py-12 lg:py-20 bg-white scroll-mt-20">
+            <section id="services" className="py-12 lg:py-20 bg-white scroll-mt-20 relative z-50 isolate">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-10 lg:mb-16">
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#0D1C2E]">{tCat('title')}</h2>
@@ -512,7 +434,7 @@ export default function HomeClient() {
                                             <category.icon className={`w-6 h-6 lg:w-8 lg:h-8 transition-all duration-300 ${isActive ? 'text-amber-500 stroke-[2.5px]' : 'text-slate-500 stroke-2 group-hover:text-[#0D1C2E]'}`} />
                                         </div>
                                         <div className="flex flex-col items-center gap-1">
-                                            <span className={`text-sm lg:text-base whitespace-nowrap transition-all duration-300 ${isActive ? 'font-bold text-[#0D1C2E]' : 'font-medium text-slate-500 group-hover:text-slate-800'}`}>{category.label}</span>
+                                            <span className={`text-sm lg:text-base whitespace-nowrap transition-all duration-300 ${isActive ? 'font-bold text-[#0D1C2E]' : 'font-medium text-slate-500 group-hover:text-slate-800'}`}>{tCat(category.id)}</span>
                                             {isActive ? (<motion.div layoutId="underline" className="w-full h-[3px] bg-amber-500 rounded-full shadow-[0_0_10px_rgba(245,158,11,0.6)]" />) : (<div className="w-0 h-[3px] bg-transparent" />)}
                                         </div>
                                     </button>
@@ -521,42 +443,55 @@ export default function HomeClient() {
                         </div>
                     </div>
 
-                    <div className="min-h-[120px] pt-6 lg:pt-8 border-t border-slate-100">
-                        <AnimatePresence mode="wait">
-                            <motion.div key={activeTab} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3 }}
-                                className={activeTab === 'diger' ? "flex justify-center py-4" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-4"}
-                            >
-                                {serviceCategories.find(c => c.id === activeTab)?.items.map((item: any, idx) => {
-                                    const CardContent = () => (
-                                        <>
+                    <div className="min-h-[120px] pt-6 lg:pt-8 border-t border-slate-100 relative z-20">
+                        <div className={activeTab === 'diger' ? "flex justify-center py-4" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-4"}>
+                            {serviceCategories.find(c => c.id === activeTab)?.items.map((item: any, idx) => {
+                                return (
+                                    <div
+                                        key={idx}
+                                        className={`relative bg-white rounded-[1.5rem] lg:rounded-3xl border border-slate-100 overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full shadow-sm z-50 ${activeTab === 'diger' ? 'w-full max-w-md' : ''}`}
+                                    >
+                                        {/* Detay Sayfası Yönlendirmesi (Bütün kart alanı) */}
+                                        <div
+                                            onClick={() => router.push(`/${locale}/services/${item.id}`)}
+                                            className="flex-1 flex flex-col cursor-pointer group relative z-10"
+                                        >
                                             <div className="relative h-44 lg:h-48 w-full overflow-hidden">
-                                                <img src={item.img} alt={item.name} className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
+                                                <img
+                                                    src={item.img}
+                                                    alt={tServ(item.id)}
+                                                    className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+                                                />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
                                             </div>
                                             <div className="p-5 lg:p-6 flex flex-col flex-1">
-                                                <h3 className="text-lg lg:text-xl font-bold text-[#0D1C2E] mb-2 group-hover:text-amber-600 transition-colors">{item.name}</h3>
-                                                <p className="text-xs lg:text-sm text-slate-500 mb-4 lg:mb-6 line-clamp-2">{tCards('desc_template', { service: item.name })}</p>
-                                                <div className="mt-auto">
-                                                    <div className="w-full py-2.5 lg:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 flex items-center justify-center gap-2 group-hover:bg-[#25D366] group-hover:text-white group-hover:border-transparent transition-all duration-300 text-sm lg:text-base">
-                                                        <MessageCircle className="w-4 h-4" /><span>{tCards('whatsapp_btn')}</span>
-                                                    </div>
-                                                </div>
+                                                <h3 className="text-lg lg:text-xl font-bold text-[#0D1C2E] mb-2 uppercase tracking-tight group-hover:text-amber-600 transition-colors">
+                                                    {tServ(item.id)}
+                                                </h3>
+                                                <p className="text-xs lg:text-sm text-slate-500 mb-4 lg:mb-6 line-clamp-2 italic">
+                                                    {tServ(item.id + '_desc')}
+                                                </p>
                                             </div>
-                                        </>
-                                    );
-
-                                    const containerClass = `group bg-white rounded-[1.5rem] lg:rounded-3xl border border-slate-100 overflow-hidden hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full shadow-sm ${activeTab === 'diger' ? 'w-full max-w-md' : ''}`;
-
-                                    return (
-                                        <div key={idx} className={containerClass}>
-                                            <a href={createWhatsAppLink(item.name)} target="_blank" rel="noopener noreferrer" className="contents">
-                                                <CardContent />
-                                            </a>
                                         </div>
-                                    );
-                                })}
-                            </motion.div>
-                        </AnimatePresence>
+
+                                        {/* WhatsApp Butonu (Ayrı Tıklama Alanı) */}
+                                        <div className="px-5 pb-5 lg:px-6 lg:pb-6 mt-auto relative z-30">
+                                            <button
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    e.stopPropagation();
+                                                    window.open(createWhatsAppLink(tServ(item.id)), '_blank');
+                                                }}
+                                                className="w-full py-2.5 lg:py-3 rounded-xl border border-slate-200 font-bold text-slate-600 flex items-center justify-center gap-2 bg-white hover:bg-[#25D366] hover:text-white hover:border-transparent transition-all duration-300 text-sm lg:text-base cursor-pointer active:scale-95 shadow-sm"
+                                            >
+                                                <MessageCircle className="w-4 h-4" />
+                                                <span>{tCards('whatsapp_btn')}</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
             </section>
