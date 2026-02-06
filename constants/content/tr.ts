@@ -427,44 +427,48 @@ export const trContent: Record<string, ServiceContent> = {
         ]
     },
     sigorta_pano: {
-        title: "Sigorta Panosu Tamiri, Şalter Değişimi ve Kaçak Akım Rölesi",
+        title: "İstanbul Acil Elektrikçi, Sigorta ve Tüm Elektrik Arıza Servisi",
         description: [
-            "Evinizin elektrik güvenliği sigorta panosundan başlar. Mr. Fix İstanbul olarak; atan sigortaların tamiri, bozulan şalterlerin değişimi ve hayat kurtaran kaçak akım rölesi montajı hizmetleri sunuyoruz.",
-            "Cihazlarınızın korunması ve yangın riskinin önlenmesi için panonuzdaki eskimiş sigortaları Siemens, Schneider veya Legrand markalarıyla yeniliyoruz. İstanbul'da ani elektrik kesintileri veya pano arızaları için hızlı servis sağlıyoruz. Pano içi temizlik ve kablo düzenleme işlemleriyle tesisatınızın ömrünü uzatıyoruz."
+            "Elektrik arızaları beklemez! Mr. Fix İstanbul olarak; sigorta atması, priz yanması, avize montajı veya komple tesisat yenileme gibi A'dan Z'ye tüm elektrik işlerinizde 7/24 yanınızdayız.",
+            "Maslak, Sarıyer, Beşiktaş ve Kağıthane bölgelerine 30 dakikada ulaşıyoruz. Sadece sigorta değil; korniş takma, şerit LED döşeme, internet kablosu çekme veya matkaplı montaj işlerinizi de tek seferde hallediyoruz. Uzman ekibimiz ve profesyonel ekipmanlarımızla, karanlıkta kalmanıza asla izin vermiyoruz. Hem acil tamirat hem de estetik aydınlatma çözümleri için bizi hemen arayın."
         ],
         features: [
-            "Sigorta (Şalter) Değişimi ve Pano Yenileme",
-            "Kaçak Akım Rölesi Testi ve Montajı",
-            "Elektrik Tesisat Kontrolü ve Arıza Tespiti",
-            "Yüksek Akım Korumalı Sigorta Sistemleri",
-            "Pano İçi Temizlik ve Kablo Düzenleme"
+            "Acil Elektrik Arıza Tamiri (7/24)",
+            "Sigorta Şalter Değişimi ve Pano Onarımı",
+            "Avize, Aplik ve Led Aydınlatma Montajı",
+            "Priz, Anahtar ve İnternet Hattı Tamiri",
+            "Matkaplı Montaj ve Korniş Takma İşleri"
         ],
         process: [
             {
-                title: "Arıza Analizi",
-                desc: "Atan sigortanın nedenini (kısa devre, aşırı yük) tespit ediyoruz."
+                title: "Hemen İletişim",
+                desc: "Bizi aradığınız an, size en yakın hareketli ekibimizi adresinize yönlendiriyoruz."
             },
             {
-                title: "Parça Seçimi",
-                desc: "Tesisatınızın amper değerine uygun doğru sigorta ve şalteri belirliyoruz."
+                title: "Hızlı Tespit",
+                desc: "Eve geldiğimizde arızanın kaynağını (sigorta, kablo veya cihaz) nokta atışı buluyoruz."
             },
             {
-                title: "Güvenli Montaj",
-                desc: "Elektrik akışını komple keserek raylı sistem üzerine yeni cihazları monte ediyoruz."
+                title: "Tam Kapsamlı Çözüm",
+                desc: "Yanımızdaki tam donanımlı araç sayesinde, parça beklemeden sorunu o an çözüyoruz."
             },
             {
-                title: "Test ve Devreye Alma",
-                desc: "Tesisatı kademeli olarak devreye alıp voltaj değerlerini kontrol ediyoruz."
+                title: "Güvenli Teslim",
+                desc: "Tüm sistemi test ediyor, çalıştığından emin olup garantili şekilde teslim ediyoruz."
             }
         ],
         faq: [
             {
-                q: "Sigorta sürekli neden atar?",
-                a: "Tesisata binen yük çok fazla olabilir veya bir cihazda kısa devre vardır. Sigorta bozulmuş da olabilir."
+                q: "Kaç dakikada gelirsiniz?",
+                a: "Maslak, Sarıyer ve Beşiktaş bölgesindeki motorize ekiplerimizle ortalama 30 dakikada kapınızdayız."
             },
             {
-                q: "Kaçak akım rölesi neden şart?",
-                a: "İnsan vücuduna gelebilecek elektrik çarpmasını engellediği ve yangın anında elektriği kestiği için yasal bir zorunluluktur."
+                q: "Sadece sigorta mı yapıyorsunuz?",
+                a: "Hayır, biz 'Komple Elektrikçi'yiz. Avize, priz, korniş, led, internet kablosu dahil her işi yapıyoruz."
+            },
+            {
+                q: "Pazar günü veya gece geliyor musunuz?",
+                a: "Evet, acil durumlar için nöbetçi ekiplerimiz 7 gün 24 saat hizmet vermektedir."
             }
         ]
     },
