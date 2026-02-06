@@ -426,7 +426,7 @@ export const ukContent: Record<string, ServiceContent> = {
             }
         ]
     },
-    sigorta_pano: {
+    elektrikci: {
         title: "Ремонт електрощитків та заміна автоматів",
         description: [
             "Електробезпека починається зі щитка. Mr. Fix Istanbul замінює несправні автомати та встановлює пристрої захисного відключення (ПЗВ) для вашого захисту.",

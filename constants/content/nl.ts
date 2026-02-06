@@ -426,7 +426,7 @@ export const nlContent: Record<string, ServiceContent> = {
             }
         ]
     },
-    sigorta_pano: {
+    elektrikci: {
         title: "Groepenkast Reparatie en Zekeringen Onderhoud",
         description: [
             "Elektrische veiligheid begint bij de groepenkast. Mr. Fix Istanbul vervangt defecte zekeringen en installeert aardlekschakelaars voor uw veiligheid.",

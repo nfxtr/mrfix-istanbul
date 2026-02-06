@@ -426,7 +426,7 @@ export const trContent: Record<string, ServiceContent> = {
             }
         ]
     },
-    sigorta_pano: {
+    elektrikci: {
         title: "İstanbul Acil Elektrikçi, Sigorta ve Tüm Elektrik Arıza Servisi",
         description: [
             "Elektrik arızaları beklemez! Mr. Fix İstanbul olarak; sigorta atması, priz yanması, avize montajı veya komple tesisat yenileme gibi A'dan Z'ye tüm elektrik işlerinizde 7/24 yanınızdayız.",

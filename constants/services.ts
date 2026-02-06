@@ -32,7 +32,7 @@ export const serviceCategories = [
         items: [
             { id: 'avize_montaji', keywords: ['lamba', 'aydınlatma', 'sarkıt', 'aplik'], img: 'https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&q=80&w=600' },
             { id: 'priz_anahtar', keywords: ['elektrik düğmesi', 'fiş', 'kablo', 'sigorta'], img: '/priz.png' },
-            { id: 'sigorta_pano', keywords: ['şartel', 'elektrik kesintisi', 'kaçak akım', 'pano'], img: '/sigorta.png' },
+            { id: 'elektrikci', keywords: ['şartel', 'elektrik kesintisi', 'kaçak akım', 'pano'], img: '/sigorta.png' },
             { id: 'led_aydinlatma', keywords: ['şerit led', 'spot', 'gizli ışık', 'rgb'], img: '/led.png' },
         ]
     },

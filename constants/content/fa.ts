@@ -426,7 +426,7 @@ export const faContent: Record<string, ServiceContent> = {
             }
         ]
     },
-    sigorta_pano: {
+    elektrikci: {
         title: "تعمیر جعبه فیوز و فیوزهای مینیاتوری",
         description: [
             "امنیت برقی خانه از جعبه فیوز شروع می‌شود. ما فیوزهای سوخته را تعویض کرده و کلید محافظ جان (دیفرانسیل) برای ایمنی شما نصب می‌کنیم.",

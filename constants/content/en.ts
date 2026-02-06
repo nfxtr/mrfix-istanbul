@@ -426,7 +426,7 @@ export const enContent: Record<string, ServiceContent> = {
             }
         ]
     },
-    sigorta_pano: {
+    elektrikci: {
         title: "Fuse Box Repair, Circuit Breaker Replacement and RCD",
         description: [
             "The electrical safety of your home starts from the fuse box. As Mr. Fix Istanbul; we offer services for the repair of tripping fuses, replacement of broken circuit breakers, and mounting of life-saving residual current devices (RCD).",

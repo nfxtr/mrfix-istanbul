@@ -426,7 +426,7 @@ export const esContent: Record<string, ServiceContent> = {
             }
         ]
     },
-    sigorta_pano: {
+    elektrikci: {
         title: "Reparación de Cuadros Eléctricos y Disyuntores",
         description: [
             "La seguridad comienza en tu cuadro eléctrico. Mr. Fix Istanbul reemplaza disyuntores defectuosos e instala interruptores diferenciales vitales.",

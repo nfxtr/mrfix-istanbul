@@ -426,7 +426,7 @@ export const deContent: Record<string, ServiceContent> = {
             }
         ]
     },
-    sigorta_pano: {
+    elektrikci: {
         title: "Sicherungskasten-Reparatur, Schutzschalteraustausch und FI",
         description: [
             "Die elektrische Sicherheit Ihres Zuhauses beginnt im Sicherungskasten. Als Mr. Fix Istanbul bieten wir Dienste zur Reparatur von auslösenden Sicherungen, zum Austausch von defekten Schutzschaltern und zur Montage von lebensrettenden Fehlerstrom-Schutzeinrichtungen (FI) an.",

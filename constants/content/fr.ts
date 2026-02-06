@@ -426,7 +426,7 @@ export const frContent: Record<string, ServiceContent> = {
             }
         ]
     },
-    sigorta_pano: {
+    elektrikci: {
         title: "Réparation de Tableau Électrique et Disjoncteurs",
         description: [
             "La sécurité commence par votre tableau électrique. Mr. Fix Istanbul remplace vos disjoncteurs défaillants et installe des interrupteurs différentiels vitaux.",

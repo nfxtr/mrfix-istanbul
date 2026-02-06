@@ -426,7 +426,7 @@ export const azContent: Record<string, ServiceContent> = {
             }
         ]
     },
-    sigorta_pano: {
+    elektrikci: {
         title: "Elektrik Paneli və Avtomatların Təmiri",
         description: [
             "Təhlükəsizlik elektrik panelindən başlayır. Mr. Fix Istanbul xarab avtomatları dəyişir və həyati əhəmiyyətli qoruyucular quraşdırır.",
